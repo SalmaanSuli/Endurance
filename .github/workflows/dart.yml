@@ -38,6 +38,9 @@ jobs:
           
       - name: Resolve dart issue
         run: dart pub upgrade
+      
+      - name: Resolve upgrade flutter
+        run: flutter upgrade
 
       - name: Install dependencies
         run: flutter pub get
