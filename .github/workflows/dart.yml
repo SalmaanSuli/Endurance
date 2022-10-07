@@ -35,6 +35,9 @@ jobs:
       - uses: subosito/flutter-action@v1.5.3
         with:
           flutter-version: '2.5.x'
+          
+      - name: Resolve dart issue
+        run: dart pub upgrade
 
       - name: Install dependencies
         run: flutter pub get
