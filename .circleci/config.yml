@@ -19,9 +19,6 @@ jobs:
           command: flutter doctor
           name: Checking the environment
       - run: 
-          command: flutter upgrade
-          name: Upgrading Flutter
-      - run: 
           command: flutter pub get
           name: Getting all dependencies
       - run: 
