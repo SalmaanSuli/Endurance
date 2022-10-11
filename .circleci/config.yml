@@ -4,8 +4,6 @@ version: 2.1
  # codecov: codecov/codecov@1.0.2
   
 jobs:
- # build:
-  #  steps:
    #   - codecov/upload:
     #      file:
           
@@ -15,11 +13,13 @@ jobs:
     steps:
       - checkout
       - run: sudo apt-get update
-      - run: sudo apt-get install sqlite3 libsqlite3-dev
+     # - run: sudo apt-get install sqlite3 libsqlite3-dev
       - run: flutter doctor
       - run: 
           command: flutter test
           name: Run Unit Test
     #  - run: flutter analyze
     #  - run: flutter -v build apk
+    #  - codecov/upload:
+    #     file:
     
