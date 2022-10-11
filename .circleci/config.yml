@@ -12,11 +12,15 @@ jobs:
       - image: cirrusci/flutter
     steps:
       - checkout
-      - run: sudo apt-get update
-     # - run: sudo apt-get install sqlite3 libsqlite3-dev
+      - run: 
+          command: sudo apt-get update
+          name: Downloading latest version of my app
       - run: 
           command: flutter doctor
           name: Checking the environment
+      - run: 
+          command: flutter upgrade
+          name: Upgrading Flutter
       - run: 
           command: flutter pub get
           name: Getting all dependencies
