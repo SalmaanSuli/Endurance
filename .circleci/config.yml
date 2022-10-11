@@ -9,5 +9,5 @@ jobs:
       - run: sudo apt-get install sqlite3 libsqlite3-dev
       - run: flutter doctor
       - run: flutter test
-      - run: flutter analyze
-      - run: flutter -v build apk
+    #  - run: flutter analyze
+    #  - run: flutter -v build apk
