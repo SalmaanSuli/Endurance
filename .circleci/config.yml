@@ -14,8 +14,12 @@ jobs:
       - checkout
       - run: sudo apt-get update
      # - run: sudo apt-get install sqlite3 libsqlite3-dev
-      - run: flutter doctor
-      - run:  flutter pub get
+      - run: 
+          command: flutter doctor
+          name: Checking the environment
+      - run: 
+          command: flutter pub get
+          name: Getting all dependencies
       - run: 
           command: flutter test
           name: Run Unit Test
