@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  build:
+  run_unit_test:
     docker:
       - image: cirrusci/flutter
     steps:
@@ -13,3 +13,16 @@ jobs:
           name: Run Unit Test
     #  - run: flutter analyze
     #  - run: flutter -v build apk
+    
+    flutter_tests_2-10-5:
+    docker:
+      - image: cirrusci/flutter:2.10.5
+    steps:
+      - checkout
+      - run: sudo gem install bundler:2.1.4
+      - run: bundle check || sudo bundle install
+      - run: bundle exec danger
+      - run: flutter doctor
+      - run: flutter packages get
+      - run: flutter pub run build_runner build --delete-conflicting-outputs
+      - run: flutter test 
