@@ -1,6 +1,17 @@
 version: 2.1
+
+orbs:
+  android: circleci/android@2.0
+  flutter: circleci/flutter@1.0
+ # codecov: codecov/codecov@1.0.2
+  
 jobs:
-  build:
+ # build:
+  #  steps:
+   #   - codecov/upload:
+    #      file:
+          
+  flutter_test:
     docker:
       - image: cirrusci/flutter
     steps:
@@ -13,5 +24,26 @@ jobs:
           name: Run Unit Test
     #  - run: flutter analyze
     #  - run: flutter -v build apk
+    
+  test_android:
+    working_directory: ~/project/example/android
+    executor:
+      name: android/android-machine
+      resource-class: xlarge
+      tag: 2022.04.1
+    steps:
+      - checkout:
+          path: ~/project
+      - flutter/install_sdk_and_pub:
+          flutter_version: 2.2.3
+          app-dir: ..
+      - android/start-emulator-and-run-tests:
+          system-image: system-images;android-30;google_apis;x86
+          additional-avd-args: -d "Nexus 5"
+          post-emulator-launch-assemble-command: flutter build apk
+          test-command: ./gradlew app:connectedAndroidTest
+      - android/run-tests:
+          test-command: ./gradlew test 
+   
     
 
