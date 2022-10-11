@@ -1,4 +1,11 @@
 version: 2.1
+orbs:
+  flutter: circleci/flutter@1.2.0
+workflows:
+  test:
+    jobs:
+      - flutter/unit_test:
+          version: 2.2.3
 jobs:
   build:
     docker:
@@ -8,6 +15,8 @@ jobs:
       - run: sudo apt-get update
       - run: sudo apt-get install sqlite3 libsqlite3-dev
       - run: flutter doctor
-      - run: flutter test
+      - run: 
+          command: flutter test
+          name: Run Unit Test
     #  - run: flutter analyze
     #  - run: flutter -v build apk
