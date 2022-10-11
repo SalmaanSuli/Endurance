@@ -9,7 +9,7 @@ jobs:
    #   - codecov/upload:
     #      file:
           
-  flutter_test:
+  build:
     docker:
       - image: cirrusci/flutter
     steps:
