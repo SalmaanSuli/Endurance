@@ -1,0 +1,13 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cirrusci/flutter
+    steps:
+      - checkout
+      - run: sudo apt-get update
+      - run: sudo apt-get install sqlite3 libsqlite3-dev
+      - run: flutter doctor
+      - run: flutter test
+      - run: flutter analyze
+      - run: flutter -v build apk
