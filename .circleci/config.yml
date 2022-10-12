@@ -3,63 +3,28 @@ version: 2.1
 # Orb declarations
 orbs:
   codecov: codecov/codecov@1.0.2
-
-executors:
-  default-executor:
-    docker:
-      - image: cirrusci/flutter:stable
-
-commands:
-  tests:
-    description: "Run local unit tests"
-    steps:
-      - run:
-          name: command to run unit tests
-          command: flutter test  #--reporter json | tojunit --output test-results/dart-tests/device_widgets_unit_tests-report.xml
-  run-test-coverage:
-    description: "Run all tests"
-    steps:
-      - run:
-          name: command to run all tests
-          command: flutter test --coverage
-      - codecov/upload:
-          file: coverage/lcov.info
-
-  flutter-tests:
-    description: "Run flutter tests"
-    steps:
-      - run:
-          name: command to run flutter tests
-          command: |
-            flutter test --coverage
-      - codecov/upload:
-          file: coverage/lcov.info
+  
 jobs:
+   #   - codecov/upload:
+    #      file:
+          
   build:
-    executor: default-executor
+    docker:
+      - image: cirrusci/flutter
     steps:
-      - run:
-          name: Make folder for test results
-          command: mkdir -p test-results/dart-tests
-      - tests
-      - run-test-coverage
-      - store_test_results:
-          path: test-results
+      - checkout
+      - run: 
+          command: sudo apt-get update
+          name: Downloading latest version of my app
+      - run: 
+          command: flutter doctor
+          name: Checking the environment
+      - run: 
+          command: flutter pub get
+          name: Getting all dependencies
+      - run: 
+          command: flutter test --coverage
+          name: Run Unit Test
 
-workflows:
-  version: 2.1
-  build:
-    jobs:
-      - build:
-          filters:
-            branches:
-              ignore:
-                - main
-  test-changelog-tag:
-    jobs:
-      - build:
-          filters:
-            branches:
-              only:
-                - main
-      
+      - codecov/upload:
+         file: coverage/lcov.info
