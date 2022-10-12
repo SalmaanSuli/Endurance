@@ -15,7 +15,7 @@ commands:
     steps:
       - run:
           name: command to run unit tests
-          command: flutter test --reporter json | tojunit --output test-results/dart-tests/device_widgets_unit_tests-report.xml
+          command: flutter test  #--reporter json | tojunit --output test-results/dart-tests/device_widgets_unit_tests-report.xml
   run-test-coverage:
     description: "Run all tests"
     steps:
