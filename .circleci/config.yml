@@ -47,7 +47,7 @@ commands:
       - codecov/upload:
           file: coverage/lcov.info
 jobs:
-  test:
+  build:
     executor: default-executor
     steps:
       - dependencies:
