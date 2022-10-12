@@ -62,16 +62,16 @@ jobs:
 
 workflows:
   version: 2.1
-  test:
+  build:
     jobs:
-      - test:
+      - build:
           filters:
             branches:
               ignore:
                 - main
   test-changelog-tag:
     jobs:
-      - test:
+      - build:
           filters:
             branches:
               only:
