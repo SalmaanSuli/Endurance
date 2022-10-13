@@ -12,23 +12,24 @@ import 'package:flutter/material.dart';
 import 'package:endurance_fitness/main.dart';
 import 'package:endurance_fitness/homescreen.dart';
 import 'package:endurance_fitness/signupscreen.dart';
+//import 'package:endurance_fitness/loginscreen.dart';
 import 'package:endurance_fitness/tasksscreen.dart';
 
 import 'package:crypto/crypto.dart';
 import 'dart:convert'; // for the utf8.encode method
 
 import 'package:crypt/crypt.dart';
+//import '../auth/auth_util.dart';
+//import 'package:auth/auth.dart';
 
-import 'package:endurance_fitness/globalvars.dart' as globalV;
-
-class EmailFieldValidator {
-  static String validate(String value) {
-    return value.isEmpty ? 'Please fill in all fields' : '';
+class EmailFieldValidator{
+  static String validate(String value){
+    return value.isEmpty ? 'Please fill in all fields':'';
   }
 }
 
-class PasswordFieldValidator {
-  static String validate(String value) {
+class PasswordFieldValidator{
+  static String validate(String value){
     return value.isEmpty ? 'incorrect password' : '';
   }
 }
@@ -168,8 +169,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             .secondaryText,
                                       ),
                                     ),
-                                    validator: (value) =>
-                                        EmailFieldValidator.validate(''),
+                                    validator: (value) => EmailFieldValidator.validate(''),
                                     style: EnduranceTheme.of(context)
                                         .bodyText1
                                         .override(
@@ -253,8 +253,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           ),
                                         ),
                                       ),
-                                      validator: (value) =>
-                                          PasswordFieldValidator.validate(''),
+                                      validator: (value) => PasswordFieldValidator.validate(''),
                                       style: EnduranceTheme.of(context)
                                           .bodyText1
                                           .override(
@@ -572,12 +571,10 @@ Future doLogin(BuildContext context, String email, String password) async {
   bool correctPass = isCorrectPass(password, dbPass, context);
 
   if (correctPass) {
-    globalV.email_GLOBAL = email;
     await Navigator.pushAndRemoveUntil(
       context,
       MaterialPageRoute(
-        builder: (context) =>
-            MyTasksWidget(), // MyTasksWidget(fkey: "daily"), //LOGIN
+        builder: (context) => MyTasksWidget(), //LOGIN
       ),
       (r) => false,
     );
