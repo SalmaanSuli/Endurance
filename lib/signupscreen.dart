@@ -25,6 +25,46 @@ import 'dart:convert'; // for the utf8.encode method
 //import '../auth/auth_util.dart';
 //import '../backend/backend.dart';
 
+class EmailFieldValidator{
+  static String validate(String value){
+    return value.isEmpty ? 'Please fill in all fields':'';
+  }
+}
+
+class NameFieldValidator{
+  static String validate(String value){
+    return value.isEmpty ? 'Please fill in all fields' : '';
+  }
+}
+
+class PasswordFieldValidator{
+  static String validate(String value){
+    if (value.length < 8){
+      return value.isEmpty ? 'Password must be at least 8 characters.' : '';
+    }
+    else if (!value.contains(new RegExp(r'[A-Z]'))){
+      return value.isEmpty ? 'Password must have an Uppercase letter.' : '';
+    }
+    else if (!value.contains(new RegExp(r'[0-9]'))){
+      return value.isEmpty ? 'Password must contain a digit.' : '';
+    }
+    else if (!value.contains(new RegExp(r'[a-z]'))){
+      return value.isEmpty ? 'Password must have an Lowercase letter.' : '';
+    }
+    else if (!value.contains(new RegExp(r'[!@#$%^&*()-=,.<>:"{}?`~]'))){
+      return value.isEmpty ? 'Password must contain a special character, like &,#,%.' : '';
+    }
+    return value.isEmpty ? 'Please fill in all fields' :'';
+    
+  }
+}
+
+class ConfirmPasswordFieldValidator{
+  static String validate(String value){
+    return value.isEmpty ? 'Passwords doesn\'t match' : '';
+  }
+}
+
 class SignUpWidget extends StatefulWidget {
   const SignUpWidget({Key? key}) : super(key: key);
 
@@ -167,6 +207,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                             .secondaryText,
                                       ),
                                     ),
+                                    validator: (value) => EmailFieldValidator.validate(''),
                                     style: EnduranceTheme.of(context)
                                         .bodyText1
                                         .override(
@@ -234,6 +275,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                               .secondaryText,
                                         ),
                                       ),
+                                      validator: (value) => NameFieldValidator.validate(''),
                                       style: EnduranceTheme.of(context)
                                           .bodyText1
                                           .override(
@@ -318,6 +360,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                           ),
                                         ),
                                       ),
+                                      validator: (value) => PasswordFieldValidator.validate(''),
                                       style: EnduranceTheme.of(context)
                                           .bodyText1
                                           .override(
@@ -401,6 +444,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                           ),
                                         ),
                                       ),
+                                      validator: (value) => ConfirmPasswordFieldValidator.validate(''),
                                       style: EnduranceTheme.of(context)
                                           .bodyText1
                                           .override(
@@ -456,34 +500,6 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                             ),
                                           );
                                         }
-                                        /*
-                                        final user =
-                                            await createAccountWithEmail(
-                                          context,
-                                          emailTextController!.text,
-                                          passwordTextController!.text,
-                                        );
-                                        if (user == null) {
-                                          return;
-                                        }
-
-                                        final usersCreateData =
-                                            createUsersRecordData(
-                                          createdTime: getCurrentTimestamp,
-                                        );
-                                        await UsersRecord.collection
-                                            .doc(user.uid)
-                                            .update(usersCreateData);
-
-                                        await Navigator.pushAndRemoveUntil(
-                                          context,
-                                          MaterialPageRoute(
-                                            builder: (context) => NavBarPage(
-                                                initialPage: 'myTasks'),
-                                          ),
-                                          (r) => false,
-                                        );
-                                        */
                                       },
                                       text: 'Sign Up',
                                       options: FFButtonOptions(
@@ -587,7 +603,7 @@ Future createUser(
     required String email,
     required String name,
     required String password}) async {
-  final docUser = FirebaseFirestore.instance.collection('appUsers').doc();
+  final docUser = FirebaseFirestore.instance.collection('appUsers').doc(email);
 
   /*
     final json = {
@@ -598,7 +614,7 @@ Future createUser(
     */
 
   final user = User(
-    id: email, //docUser.id,
+    id: id, //docUser.id,
     email: email,
     name: name,
     password: password,
@@ -655,7 +671,8 @@ String hashPass(String pass) {
   String hashedPass;
   hashedPass = pass;
 
-  hashedPass = Crypt.sha256(pass).toString();
+  hashedPass =
+      Crypt.sha256(pass, rounds: 10000, salt: 'abcdefghijklmnop').toString();
   //final h = Crypt(hashString);
 
   const correctValue = 'p@ssw0rd';
@@ -680,7 +697,9 @@ class User {
   final String password;
 
   User({
-    this.id = '',
+    //this.id = '',
+
+    required this.id,
     required this.email,
     required this.name,
     required this.password,
