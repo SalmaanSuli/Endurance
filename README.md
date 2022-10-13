@@ -1,6 +1,8 @@
 # SDP-ShreddedGeeks
 ENDURANCE: Fitness App
 
+[![CircleCI](https://dl.circleci.com/insights-snapshot/gh/SalmaanSuli/Endurance/main/workflow/badge.svg?window=24h)](https://app.circleci.com/insights/github/SalmaanSuli/Endurance/workflows/workflow/overview?branch=main&reporting-window=last-24-hours&insights-snapshot=true)
+
 **Setting up the environment**
 
 For this project Android studio, Git , Flutter, Django and VS code are required in order to run the application.
