@@ -2,6 +2,8 @@
 # e4-endurance
 Endurance - Social Fitness App
 =======
+[![CircleCI](https://dl.circleci.com/insights-snapshot/gh/SalmaanSuli/Endurance/sprint3branch/workflow/badge.svg?window=30d)](https://app.circleci.com/insights/github/SalmaanSuli/Endurance/workflows/workflow/overview?branch=sprint3branch&reporting-window=last-30-days&insights-snapshot=true)
+
 # endurance_fitness
 
 A new Flutter project.
