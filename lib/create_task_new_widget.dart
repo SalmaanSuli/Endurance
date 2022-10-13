@@ -11,6 +11,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'package:endurance_fitness/AppTaskClass.dart';
+
+import 'package:endurance_fitness/globalvars.dart' as globalV;
+
+class TaskNameFieldValidator {
+  static String validate(String value) {
+    return value.isEmpty ? 'Please fill in all fields' : '';
+  }
+}
+
+class DetailsFieldValidator {
+  static String validate(String value) {
+    return value.isEmpty ? 'Please fill in all fields' : '';
+  }
+}
+
 class CreateTaskNewWidget extends StatefulWidget {
   const CreateTaskNewWidget({Key? key}) : super(key: key);
 
@@ -19,9 +35,21 @@ class CreateTaskNewWidget extends StatefulWidget {
 }
 
 class _CreateTaskNewWidgetState extends State<CreateTaskNewWidget> {
-  DateTime? datePicked;
+  DateTime datePicked = DateTime(2000, 1, 10);
   TextEditingController? textController1;
   TextEditingController? textController2;
+
+  // Initial Selected Value
+  String dropdownvalue = 'None';
+
+  // List of items in our dropdown menu
+  var items = [
+    'Daily',
+    'Weekly',
+    'Monthly',
+    'Yearly',
+    'None',
+  ];
 
   @override
   void initState() {
@@ -79,7 +107,7 @@ class _CreateTaskNewWidgetState extends State<CreateTaskNewWidget> {
                 ),
                 child: Container(
                   width: MediaQuery.of(context).size.width,
-                  height: 470,
+                  height: 497, //500,
                   decoration: BoxDecoration(
                     color: EnduranceTheme.of(context).secondaryBackground,
                     boxShadow: [
@@ -171,6 +199,8 @@ class _CreateTaskNewWidgetState extends State<CreateTaskNewWidget> {
                               fillColor:
                                   EnduranceTheme.of(context).primaryBackground,
                             ),
+                            validator: (value) =>
+                                TaskNameFieldValidator.validate(''),
                             style: EnduranceTheme.of(context).bodyText1,
                           ),
                         ),
@@ -219,6 +249,8 @@ class _CreateTaskNewWidgetState extends State<CreateTaskNewWidget> {
                               fillColor:
                                   EnduranceTheme.of(context).primaryBackground,
                             ),
+                            validator: (value) =>
+                                DetailsFieldValidator.validate(''),
                             style: EnduranceTheme.of(context).bodyText1,
                             textAlign: TextAlign.start,
                             maxLines: 3,
@@ -284,6 +316,74 @@ class _CreateTaskNewWidgetState extends State<CreateTaskNewWidget> {
                         Padding(
                           padding:
                               EdgeInsetsDirectional.fromSTEB(16, 16, 16, 0),
+                          child: DropdownButtonFormField(
+                              decoration: InputDecoration(
+                                labelText: 'Reminder',
+                                labelStyle:
+                                    EnduranceTheme.of(context).subtitle2,
+                                hintText:
+                                    'Daily/Monthly/Weekly/Yearly/None....',
+                                hintStyle: EnduranceTheme.of(context).subtitle2,
+                                enabledBorder: OutlineInputBorder(
+                                  borderSide: BorderSide(
+                                    color: EnduranceTheme.of(context)
+                                        .primaryBackground,
+                                    width: 1,
+                                  ),
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                focusedBorder: OutlineInputBorder(
+                                  borderSide: BorderSide(
+                                    color: EnduranceTheme.of(context)
+                                        .primaryBackground,
+                                    width: 1,
+                                  ),
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                errorBorder: OutlineInputBorder(
+                                  borderSide: BorderSide(
+                                    color: Color(0x00000000),
+                                    width: 1,
+                                  ),
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                focusedErrorBorder: OutlineInputBorder(
+                                  borderSide: BorderSide(
+                                    color: Color(0x00000000),
+                                    width: 1,
+                                  ),
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                filled: true,
+                                fillColor: EnduranceTheme.of(context)
+                                    .primaryBackground,
+                              ),
+                              style: EnduranceTheme.of(context).bodyText1,
+
+                              // Initial Value
+                              value: dropdownvalue,
+
+                              // Down Arrow Icon
+                              icon: const Icon(Icons.keyboard_arrow_down),
+
+                              // Array list of items
+                              items: items.map((String items) {
+                                return DropdownMenuItem(
+                                  value: items,
+                                  child: Text(items),
+                                );
+                              }).toList(),
+                              // After selecting the desired option,it will
+                              // change button value to selected value
+                              onChanged: (String? newValue) {
+                                setState(() {
+                                  dropdownvalue = newValue!;
+                                });
+                              }),
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(16, 16, 16, 0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -312,20 +412,26 @@ class _CreateTaskNewWidgetState extends State<CreateTaskNewWidget> {
                                   //borderRadius: BorderRadius.circular(12),
                                 ),
                               ),
-                              /*
                               FFButtonWidget(
                                 onPressed: () async {
-                                  final toDoListCreateData =
-                                      createToDoListRecordData(
-                                    toDoName: textController1!.text,
-                                    toDoDescription: textController2!.text,
-                                    toDoDate: datePicked,
-                                    user: currentUserReference,
-                                    toDoState: false,
-                                  );
-                                  await ToDoListRecord.collection
-                                      .doc()
-                                      .set(toDoListCreateData);
+                                  final String taskName = textController1!.text;
+                                  final String taskDescription =
+                                      textController2!.text;
+                                  final DateTime taskDate = datePicked;
+                                  final String taskEmail = globalV
+                                      .email_GLOBAL; //textController1!.text; //currentUserReference;
+                                  final bool taskState = false;
+                                  final String taskFreq =
+                                      getTaskFreq(dropdownvalue);
+
+                                  createAppTask(
+                                      id: "id",
+                                      taskName: taskName,
+                                      taskDescription: taskDescription,
+                                      taskEmail: taskEmail,
+                                      taskState: taskState,
+                                      taskDate: taskDate,
+                                      taskFreq: taskFreq);
 
                                   Navigator.pop(context);
                                 },
@@ -339,7 +445,8 @@ class _CreateTaskNewWidgetState extends State<CreateTaskNewWidget> {
                                       .subtitle1
                                       .override(
                                         fontFamily: 'Outfit',
-                                        color: EnduranceTheme.of(context).white,
+                                        color: EnduranceTheme.of(context)
+                                            .primaryWhite,
                                       ),
                                   elevation: 3,
                                   borderSide: BorderSide(
@@ -348,7 +455,7 @@ class _CreateTaskNewWidgetState extends State<CreateTaskNewWidget> {
                                   ),
                                   //borderRadius: BorderRadius.circular(8),
                                 ),
-                              ),*/
+                              ),
                             ],
                           ),
                         ),

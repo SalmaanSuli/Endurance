@@ -1,3 +1,4 @@
+import 'package:endurance_fitness/tasksscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:endurance_fitness/homescreen.dart'; //import 'package:flutter/widgets.dart';
 
@@ -9,6 +10,8 @@ import 'package:endurance_fitness/endurance_animations.dart';
 import 'package:endurance_fitness/endurance_theme.dart';
 
 import 'package:endurance_fitness/endurance_widgets.dart';
+
+import 'package:endurance_fitness/globalvars.dart' as globalV;
 
 //void main() => runApp(MyApp());
 
@@ -103,6 +106,42 @@ class WelcomeScreen extends StatelessWidget {
                                   );
                                 },
                                 text: 'Begin',
+                                options: FFButtonOptions(
+                                  width: 200,
+                                  height: 70,
+                                  color: EnduranceTheme.of(context).darkBG,
+                                  textStyle: EnduranceTheme.of(context)
+                                      .subtitle2
+                                      .override(
+                                        fontFamily: 'Montserrat',
+                                        color: Color(0xFF9AC62B),
+                                        fontSize: 22,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                  elevation: 3,
+                                  borderSide: BorderSide(
+                                    color: Color(0xFF9AC62B),
+                                    width: 1,
+                                  ),
+                                  //borderRadius: BorderRadius.circular(8),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  24, 24, 24, 24),
+                              child: FFButtonWidget(
+                                onPressed: () async {
+                                  globalV.email_GLOBAL = "sal6@gmail.com";
+                                  await Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          MyTasksWidget(), //MyTasksWidget( fkey: "daily"), //WelcomeScreen(), //LOGIN
+                                    ),
+                                  );
+                                },
+                                text: 'Bypass Login (Testing)',
                                 options: FFButtonOptions(
                                   width: 200,
                                   height: 70,

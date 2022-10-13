@@ -52,6 +52,11 @@ dependencies:
   crypto: ^3.0.2
   convert: ^3.0.2
   crypt: ^4.2.1
+  awesome_notifications: ^0.7.2
+  holding_gesture: ^1.1.0
+  flutter_email_sender: ^5.1.0
+  push: ^0.1.3
+  firebase_messaging: ^13.1.0
 
 dev_dependencies:
   flutter_test:

@@ -22,6 +22,8 @@ import 'package:crypto/crypto.dart';
 import 'package:crypt/crypt.dart';
 import 'dart:convert'; // for the utf8.encode method
 
+import 'package:endurance_fitness/globalvars.dart' as globalV;
+
 //import '../auth/auth_util.dart';
 //import '../backend/backend.dart';
 
@@ -448,42 +450,16 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                               name: name,
                                               password:
                                                   hashedPassword); // hashedPassword);
+                                          globalV.email_GLOBAL = email;
                                           Navigator.push(
                                             context,
                                             MaterialPageRoute(
                                               builder: (context) =>
-                                                  MyTasksWidget(), //SIGNUP
+                                                  MyTasksWidget(),
+                                              // MyTasksWidget(fkey: "daily"), //SIGNUP
                                             ),
                                           );
                                         }
-                                        /*
-                                        final user =
-                                            await createAccountWithEmail(
-                                          context,
-                                          emailTextController!.text,
-                                          passwordTextController!.text,
-                                        );
-                                        if (user == null) {
-                                          return;
-                                        }
-
-                                        final usersCreateData =
-                                            createUsersRecordData(
-                                          createdTime: getCurrentTimestamp,
-                                        );
-                                        await UsersRecord.collection
-                                            .doc(user.uid)
-                                            .update(usersCreateData);
-
-                                        await Navigator.pushAndRemoveUntil(
-                                          context,
-                                          MaterialPageRoute(
-                                            builder: (context) => NavBarPage(
-                                                initialPage: 'myTasks'),
-                                          ),
-                                          (r) => false,
-                                        );
-                                        */
                                       },
                                       text: 'Sign Up',
                                       options: FFButtonOptions(
@@ -587,7 +563,7 @@ Future createUser(
     required String email,
     required String name,
     required String password}) async {
-  final docUser = FirebaseFirestore.instance.collection('appUsers').doc();
+  final docUser = FirebaseFirestore.instance.collection('appUsers').doc(email);
 
   /*
     final json = {
@@ -598,7 +574,7 @@ Future createUser(
     */
 
   final user = User(
-    id: email, //docUser.id,
+    id: id, //docUser.id,
     email: email,
     name: name,
     password: password,
@@ -655,7 +631,8 @@ String hashPass(String pass) {
   String hashedPass;
   hashedPass = pass;
 
-  hashedPass = Crypt.sha256(pass).toString();
+  hashedPass =
+      Crypt.sha256(pass, rounds: 10000, salt: 'abcdefghijklmnop').toString();
   //final h = Crypt(hashString);
 
   const correctValue = 'p@ssw0rd';
@@ -680,7 +657,9 @@ class User {
   final String password;
 
   User({
-    this.id = '',
+    //this.id = '',
+
+    required this.id,
     required this.email,
     required this.name,
     required this.password,

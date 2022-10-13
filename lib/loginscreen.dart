@@ -6,9 +6,6 @@ import 'package:endurance_fitness/endurance_theme.dart';
 import 'package:endurance_fitness/endurance_util.dart';
 import 'package:endurance_fitness/endurance_widgets.dart';
 
-//import '../login/login_widget.dart';
-//import '../sign_up/sign_up_widget.dart';
-
 import 'package:flutter/material.dart';
 //import 'package:google_fonts/google_fonts.dart';
 
@@ -21,8 +18,20 @@ import 'package:crypto/crypto.dart';
 import 'dart:convert'; // for the utf8.encode method
 
 import 'package:crypt/crypt.dart';
-//import '../auth/auth_util.dart';
-//import 'package:auth/auth.dart';
+
+import 'package:endurance_fitness/globalvars.dart' as globalV;
+
+class EmailFieldValidator {
+  static String validate(String value) {
+    return value.isEmpty ? 'Please fill in all fields' : '';
+  }
+}
+
+class PasswordFieldValidator {
+  static String validate(String value) {
+    return value.isEmpty ? 'incorrect password' : '';
+  }
+}
 
 class LoginWidget extends StatefulWidget {
   const LoginWidget({Key? key}) : super(key: key);
@@ -159,6 +168,8 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             .secondaryText,
                                       ),
                                     ),
+                                    validator: (value) =>
+                                        EmailFieldValidator.validate(''),
                                     style: EnduranceTheme.of(context)
                                         .bodyText1
                                         .override(
@@ -242,6 +253,8 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           ),
                                         ),
                                       ),
+                                      validator: (value) =>
+                                          PasswordFieldValidator.validate(''),
                                       style: EnduranceTheme.of(context)
                                           .bodyText1
                                           .override(
@@ -256,6 +269,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                         0, 24, 0, 0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
+                                        /*
                                         await Navigator.pushAndRemoveUntil(
                                           context,
                                           MaterialPageRoute(
@@ -264,9 +278,14 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           ),
                                           (r) => false,
                                         );
+                                        */
                                         final email = emailTextController!.text;
                                         final password =
                                             passwordTextController!.text;
+
+                                        doLogin(context, email, password);
+
+                                        /*
 
                                         final docUser = FirebaseFirestore
                                             .instance
@@ -291,7 +310,13 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             ),
                                             (r) => false,
                                           );
+                                        } else {
+                                          ScaffoldMessenger.of(context)
+                                              .showSnackBar(SnackBar(
+                                                  content: Text(
+                                                      "Incorrect Password")));
                                         }
+                                        */
                                       },
                                       text: 'Login',
                                       options: FFButtonOptions(
@@ -415,15 +440,21 @@ bool isCorrectPass(
 ) {
   //String hashedPass;
   //hashedPass = pass;
+
+  /*
   if (pass == hashedPass) {
     return true;
   }
+  */
 
-  final h = Crypt.sha256(pass).toString();
+  final h =
+      Crypt.sha256(pass, rounds: 10000, salt: 'abcdefghijklmnop').toString();
   print("toprint");
   print(h);
   debugPrint(h);
-  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("hash")));
+
+  //printSM(context, "hashed: " + h);
+  //ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("hash")));
 
   if (h == hashedPass) {
     return true;
@@ -497,4 +528,72 @@ String hashPass(String pass) {
     """;
 
   return hashedPass;
+}
+
+Future doLogin(BuildContext context, String email, String password) async {
+  if (email == "" || password == "") {
+    ScaffoldMessenger.of(context)
+        .showSnackBar(SnackBar(content: Text("Please fill in all fields")));
+    return;
+  }
+
+  /*
+  String searchKey = email;
+  Stream streamQuery = FirebaseFirestore.instance
+      .collection('appUsers')
+      .where('email', isEqualTo: searchKey)
+      //.where('fieldName', isLessThan: searchKey +'z')
+      .snapshots();
+
+  final snapshot = await streamQuery.first;
+  */
+
+  final docUser = FirebaseFirestore.instance.collection('appUsers').doc(email);
+
+  final snapshot = await docUser.get();
+  //ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(email + " " + password)));
+  /*
+  final dUser = User.fromJson({
+    'id': 'id',
+    'email': email,
+    'name': 'name',
+    'password': password,
+  });
+  */
+  String dbPass = "";
+  if (snapshot.exists) {
+    final dUser = User.fromJson(snapshot.data()!);
+    dbPass = dUser.password;
+  }
+
+  //ScaffoldMessenger.of(context).showSnackBar( SnackBar(content: Text("hello  " + password + " " + dbPass)));
+  //final dbPass = dUser.password;
+
+  bool correctPass = isCorrectPass(password, dbPass, context);
+
+  if (correctPass) {
+    globalV.email_GLOBAL = email;
+    await Navigator.pushAndRemoveUntil(
+      context,
+      MaterialPageRoute(
+        builder: (context) =>
+            MyTasksWidget(), // MyTasksWidget(fkey: "daily"), //LOGIN
+      ),
+      (r) => false,
+    );
+
+    ScaffoldMessenger.of(context)
+        .showSnackBar(SnackBar(content: Text("Logging in...")));
+  } else {
+    ScaffoldMessenger.of(context)
+        .showSnackBar(SnackBar(content: Text("Incorrect Password")));
+  }
+}
+
+void printSM(
+  BuildContext context,
+  String s,
+) {
+  //show message
+  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(s)));
 }
