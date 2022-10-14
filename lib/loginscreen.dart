@@ -21,6 +21,14 @@ import 'package:crypt/crypt.dart';
 
 import 'package:endurance_fitness/globalvars.dart' as globalV;
 
+class Welcome {
+  String value = "Begin";
+
+  void increment() => value;
+
+  void decrement() => value;
+}
+
 class EmailFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Please fill in all fields' : '';
