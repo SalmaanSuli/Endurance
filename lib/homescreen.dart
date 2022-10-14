@@ -13,6 +13,14 @@ import 'package:endurance_fitness/main.dart';
 import 'package:endurance_fitness/loginscreen.dart';
 import 'package:endurance_fitness/signupscreen.dart';
 
+class Welcome {
+  String value = "Begin";
+
+  void increment() => value;
+
+  void decrement() => value;
+}
+
 class HomeScreenWidget extends StatefulWidget {
   const HomeScreenWidget({Key? key}) : super(key: key);
 
