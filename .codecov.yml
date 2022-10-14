@@ -1,0 +1,15 @@
+coverage:
+  status:
+    project:
+      frontend:
+        target: 50%
+        flags:
+          - frontend
+flags:
+  frontend:
+    paths:
+      - lib/
+  tests:
+    paths:
+      - test/
+
