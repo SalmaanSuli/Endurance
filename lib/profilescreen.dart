@@ -40,6 +40,14 @@ class fKEY {
   fKEY(this.frequency);
 }
 
+class MyProfScreen {
+  int value = 0;
+
+  void increment() => value++;
+
+  void decrement() => value--;
+}
+
 class MyProfileWidget extends StatefulWidget {
   const MyProfileWidget({Key? key}) : super(key: key);
 
