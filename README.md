@@ -1,6 +1,6 @@
 # SDP-ShreddedGeeks
 ENDURANCE: Fitness App
-+ **Test/Code Coverage** -  | ![Coverage 87.6%](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cicirello/jacoco-badge-generator/main/tests/80.json) | - coverage is the measure of how much of the code in a project is tested. 
++ **Test/Code Coverage** -  | ![Coverage 78.6%](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cicirello/jacoco-badge-generator/main/tests/80.json) | - coverage is the measure of how much of the code in a project is tested. 
 
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/SalmaanSuli/Endurance/tree/sprint3branch.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/SalmaanSuli/Endurance/tree/sprint3branch)
 
