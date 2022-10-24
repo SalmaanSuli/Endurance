@@ -36,6 +36,12 @@ jobs:
       - run: 
           command: flutter test --coverage
           name: Run Test coverage
+          
+      - name: Upload coverage reports to Codecov
+          run: |
+          curl -Os https://uploader.codecov.io/latest/linux/codecov 
+          chmod +x codecov 
+          ./codecov
       
       - store_test_results:
           path: test-results
