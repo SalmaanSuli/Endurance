@@ -39,7 +39,10 @@ jobs:
   #        curl -Os https://uploader.codecov.io/latest/linux/codecov 
    #       chmod +x codecov 
     #      ./codecov
-      
+      - run:
+          command: apt install gpg-agent
+          name: Adding gpg agent
+          
       - store_test_results:
           path: test-results
 
