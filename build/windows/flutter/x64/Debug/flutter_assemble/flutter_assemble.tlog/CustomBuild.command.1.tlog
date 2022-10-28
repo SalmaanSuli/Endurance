@@ -1,0 +1,28 @@
+^C:\USERS\SALMA\DESKTOP\E4APP_NEW\ENDURANCE_FITNESS\BUILD\WINDOWS\CMAKEFILES\205995876FC0CBF2D65CC5BB0DDAB336\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\src\flutter PROJECT_DIR=C:\Users\salma\Desktop\e4app_new\endurance_fitness FLUTTER_ROOT=C:\src\flutter FLUTTER_EPHEMERAL_DIR=C:\Users\salma\Desktop\e4app_new\endurance_fitness\windows\flutter\ephemeral PROJECT_DIR=C:\Users\salma\Desktop\e4app_new\endurance_fitness FLUTTER_TARGET=C:\Users\salma\Desktop\e4app_new\endurance_fitness\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\Users\salma\Desktop\e4app_new\endurance_fitness\.dart_tool\package_config.json C:/src/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SALMA\DESKTOP\E4APP_NEW\ENDURANCE_FITNESS\BUILD\WINDOWS\CMAKEFILES\CB43867841FF2F49EBB5A47991F93F5C\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SALMA\DESKTOP\E4APP_NEW\ENDURANCE_FITNESS\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/salma/Desktop/e4app_new/endurance_fitness/windows -BC:/Users/salma/Desktop/e4app_new/endurance_fitness/build/windows --check-stamp-file C:/Users/salma/Desktop/e4app_new/endurance_fitness/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

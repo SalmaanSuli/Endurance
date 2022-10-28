@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "534659687466",
+    "project_id": "e4app-endurance",
+    "storage_bucket": "e4app-endurance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534659687466:android:d85654012b7311697e4f53",
+        "android_client_info": {
+          "package_name": "com.example.endurance_fitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534659687466-j3qh4fdsuji4rde4p44fi57edlg74ghc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZSzllJswICNM3GEBAU9ZoUfq4tTloaRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534659687466-j3qh4fdsuji4rde4p44fi57edlg74ghc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
