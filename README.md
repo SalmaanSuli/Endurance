@@ -1,7 +1,7 @@
 # SDP-ShreddedGeeks
 ENDURANCE: Fitness App
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/SalmaanSuli/Endurance/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/SalmaanSuli/Endurance/tree/Smukello-patch-1)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/SalmaanSuli/Endurance/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/SalmaanSuli/Endurance/tree/main)
 
 https://app.codecov.io/github/SalmaanSuli/Endurance/commit/3132a35aafd88b4ae6444ccdf3bbd247bbe4f7e0
 
