@@ -10,7 +10,7 @@ ENDURANCE: Fitness App
 
 
 
-[![codecov](https://codecov.io/gh/SalmaanSuli/Endurance/branch/Smukello-patch-1/graphs/tree.svg?token=PXDM8HIGKO)]
+![codecov](https://codecov.io/gh/SalmaanSuli/Endurance/branch/Smukello-patch-1/graphs/tree.svg?token=PXDM8HIGKO)
 
 **Setting up the environment**
 
