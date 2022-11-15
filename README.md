@@ -3,8 +3,6 @@ ENDURANCE: Fitness App
 
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/SalmaanSuli/Endurance/tree/Smukello-patch-1.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/SalmaanSuli/Endurance/tree/Smukello-patch-1)
 
-https://app.codecov.io/github/SalmaanSuli/Endurance/commit/3132a35aafd88b4ae6444ccdf3bbd247bbe4f7e0
-
 
 ![Coverage 84.2%](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cicirello/jacoco-badge-generator/main/tests/80.json) [![CircleCI](https://dl.circleci.com/status-badge/img/gh/SalmaanSuli/Endurance/tree/Smukello-patch-1.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/SalmaanSuli/Endurance/tree/Smukello-patch-1)
 
