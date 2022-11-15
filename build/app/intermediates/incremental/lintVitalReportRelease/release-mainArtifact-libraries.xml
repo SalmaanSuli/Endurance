@@ -1,13 +1,13 @@
 <libraries>
   <library
-      name="__local_aars__:C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\app\intermediates\flutter\release\libs.jar:unspecified@jar"
-      jars="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\app\intermediates\flutter\release\libs.jar"
-      resolved="__local_aars__:C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\app\intermediates\flutter\release\libs.jar:unspecified"/>
+      name="__local_aars__:C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\app\intermediates\flutter\release\libs.jar:unspecified@jar"
+      jars="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\app\intermediates\flutter\release\libs.jar"
+      resolved="__local_aars__:C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\app\intermediates\flutter\release\libs.jar:unspecified"/>
   <library
-      name="C:\Users\salma\Desktop\e4app_new\endurance_fitness\android@@:cloud_firestore::release"
-      jars="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\cloud_firestore\.transforms\399510393b668e2d990f1bba4a38dff1\transformed\out\jars\classes.jar"
+      name="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android@@:cloud_firestore::release"
+      jars="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\cloud_firestore\.transforms\77f66ab1cc821345eef1090887dc0d8d\transformed\out\jars\classes.jar"
       resolved="io.flutter.plugins.firebase.cloudfirestore:cloud_firestore:unspecified"
-      folder="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\cloud_firestore\.transforms\399510393b668e2d990f1bba4a38dff1\transformed\out"
+      folder="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\cloud_firestore\.transforms\77f66ab1cc821345eef1090887dc0d8d\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -17,10 +17,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="C:\Users\salma\Desktop\e4app_new\endurance_fitness\android@@:firebase_auth::release"
-      jars="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_auth\.transforms\27ac9f5816ac2eb8e038ee0dde7859dd\transformed\out\jars\classes.jar"
+      name="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android@@:firebase_auth::release"
+      jars="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_auth\.transforms\66f8c777dbd71a39279ae8ca44238ee5\transformed\out\jars\classes.jar"
       resolved="io.flutter.plugins.firebase.auth:firebase_auth:unspecified"
-      folder="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_auth\.transforms\27ac9f5816ac2eb8e038ee0dde7859dd\transformed\out"
+      folder="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_auth\.transforms\66f8c777dbd71a39279ae8ca44238ee5\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -30,10 +30,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="C:\Users\salma\Desktop\e4app_new\endurance_fitness\android@@:firebase_messaging::release"
-      jars="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\.transforms\deb9e63aac2cfcd81ab5c0ce61747f31\transformed\out\jars\classes.jar"
+      name="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android@@:firebase_messaging::release"
+      jars="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\.transforms\ceb133cfcb9a8e800955219be9d42d6b\transformed\out\jars\classes.jar"
       resolved="io.flutter.plugins.firebasemessaging:firebase_messaging:unspecified"
-      folder="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\.transforms\deb9e63aac2cfcd81ab5c0ce61747f31\transformed\out"
+      folder="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\.transforms\ceb133cfcb9a8e800955219be9d42d6b\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -43,10 +43,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="C:\Users\salma\Desktop\e4app_new\endurance_fitness\android@@:firebase_core::release"
-      jars="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_core\.transforms\6eb02faeccce786fdf16c26dfe1c9a6c\transformed\out\jars\classes.jar"
+      name="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android@@:firebase_core::release"
+      jars="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_core\.transforms\339f848222af368c2c28f72cf747475e\transformed\out\jars\classes.jar"
       resolved="io.flutter.plugins.firebase.core:firebase_core:unspecified"
-      folder="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_core\.transforms\6eb02faeccce786fdf16c26dfe1c9a6c\transformed\out"
+      folder="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_core\.transforms\339f848222af368c2c28f72cf747475e\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -56,10 +56,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="C:\Users\salma\Desktop\e4app_new\endurance_fitness\android@@:flutter_email_sender::release"
-      jars="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\flutter_email_sender\.transforms\8164ea550fa8ea7e4cc13b39b682469c\transformed\out\jars\classes.jar"
+      name="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android@@:flutter_email_sender::release"
+      jars="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\flutter_email_sender\.transforms\98629f387f2f43cb63179cc1a41a5375\transformed\out\jars\classes.jar"
       resolved="com.sidlatau.flutteremailsender:flutter_email_sender:unspecified"
-      folder="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\flutter_email_sender\.transforms\8164ea550fa8ea7e4cc13b39b682469c\transformed\out"
+      folder="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\flutter_email_sender\.transforms\98629f387f2f43cb63179cc1a41a5375\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -69,10 +69,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="C:\Users\salma\Desktop\e4app_new\endurance_fitness\android@@:awesome_notifications::release"
-      jars="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\.transforms\175cc13ce87e04f2bb201dfbf22cc0ee\transformed\out\jars\classes.jar"
+      name="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android@@:awesome_notifications::release"
+      jars="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\.transforms\c615acb9cc5b2cf96a36c7ab9dac7544\transformed\out\jars\classes.jar"
       resolved="me.carda.awesome_notifications:awesome_notifications:unspecified"
-      folder="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\.transforms\175cc13ce87e04f2bb201dfbf22cc0ee\transformed\out"
+      folder="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\.transforms\c615acb9cc5b2cf96a36c7ab9dac7544\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -82,10 +82,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="C:\Users\salma\Desktop\e4app_new\endurance_fitness\android@@:flutter_login_facebook::release"
-      jars="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\flutter_login_facebook\.transforms\078e9dabfe6229b999ce93d5fc33f480\transformed\out\jars\classes.jar"
+      name="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android@@:flutter_login_facebook::release"
+      jars="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\flutter_login_facebook\.transforms\7dea2789c76ba25166a5b3df5eeaa8e7\transformed\out\jars\classes.jar"
       resolved="ru.innim.flutter_login_facebook:flutter_login_facebook:unspecified"
-      folder="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\flutter_login_facebook\.transforms\078e9dabfe6229b999ce93d5fc33f480\transformed\out"
+      folder="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\flutter_login_facebook\.transforms\7dea2789c76ba25166a5b3df5eeaa8e7\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -95,10 +95,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="C:\Users\salma\Desktop\e4app_new\endurance_fitness\android@@:url_launcher_android::release"
-      jars="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\url_launcher_android\.transforms\fcf2d19639aae26fa08b07322f401935\transformed\out\jars\classes.jar"
+      name="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android@@:url_launcher_android::release"
+      jars="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\url_launcher_android\.transforms\e9bf103b09649cf05ba13fc09cdca5c7\transformed\out\jars\classes.jar"
       resolved="io.flutter.plugins.urllauncher:url_launcher_android:unspecified"
-      folder="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\url_launcher_android\.transforms\fcf2d19639aae26fa08b07322f401935\transformed\out"
+      folder="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\url_launcher_android\.transforms\e9bf103b09649cf05ba13fc09cdca5c7\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -108,10 +108,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="C:\Users\salma\Desktop\e4app_new\endurance_fitness\android@@:path_provider_android::release"
-      jars="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\path_provider_android\.transforms\8340efe69c3cb322a534627b2a4be35c\transformed\out\jars\classes.jar"
+      name="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android@@:path_provider_android::release"
+      jars="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\path_provider_android\.transforms\a82a4003c5a99302232bc57eb20d5f07\transformed\out\jars\classes.jar"
       resolved="io.flutter.plugins.pathprovider:path_provider_android:unspecified"
-      folder="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\path_provider_android\.transforms\8340efe69c3cb322a534627b2a4be35c\transformed\out"
+      folder="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\path_provider_android\.transforms\a82a4003c5a99302232bc57eb20d5f07\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -121,10 +121,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="C:\Users\salma\Desktop\e4app_new\endurance_fitness\android@@:push_android::release"
-      jars="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\push_android\.transforms\a0b42824b3fa0f4aaa4fae18cbed39a0\transformed\out\jars\classes.jar"
+      name="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android@@:push_android::release"
+      jars="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\push_android\.transforms\138f88ef9d36772222dccf53f30e9b0a\transformed\out\jars\classes.jar"
       resolved="uk.orth.push.example:push_android:unspecified"
-      folder="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\push_android\.transforms\a0b42824b3fa0f4aaa4fae18cbed39a0\transformed\out"
+      folder="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\push_android\.transforms\138f88ef9d36772222dccf53f30e9b0a\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -134,10 +134,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="C:\Users\salma\Desktop\e4app_new\endurance_fitness\android@@:google_sign_in_android::release"
-      jars="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\google_sign_in_android\.transforms\402f0406985e6c815ecf2dce9110beef\transformed\out\jars\classes.jar"
+      name="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android@@:google_sign_in_android::release"
+      jars="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\google_sign_in_android\.transforms\651e8cb6b232db8254d3580ba0c93435\transformed\out\jars\classes.jar"
       resolved="io.flutter.plugins.googlesignin:google_sign_in_android:unspecified"
-      folder="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\google_sign_in_android\.transforms\402f0406985e6c815ecf2dce9110beef\transformed\out"
+      folder="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\google_sign_in_android\.transforms\651e8cb6b232db8254d3580ba0c93435\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -147,10 +147,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="C:\Users\salma\Desktop\e4app_new\endurance_fitness\android@@:shared_preferences_android::release"
-      jars="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\shared_preferences_android\.transforms\5e5b35f88bc502cc3aa5eccc6b2e0460\transformed\out\jars\classes.jar"
+      name="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android@@:shared_preferences_android::release"
+      jars="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\shared_preferences_android\.transforms\943f58bcb4e886fcc0f0d7ce4fd98670\transformed\out\jars\classes.jar"
       resolved="io.flutter.plugins.sharedpreferences:shared_preferences_android:unspecified"
-      folder="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\shared_preferences_android\.transforms\5e5b35f88bc502cc3aa5eccc6b2e0460\transformed\out"
+      folder="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\shared_preferences_android\.transforms\943f58bcb4e886fcc0f0d7ce4fd98670\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -160,10 +160,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="C:\Users\salma\Desktop\e4app_new\endurance_fitness\android@@:twitter_login::release"
-      jars="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\twitter_login\.transforms\dfe2b9a5cbf354168c07b69a82192405\transformed\out\jars\classes.jar"
+      name="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android@@:twitter_login::release"
+      jars="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\twitter_login\.transforms\c433ab3f6f6ee8322a9dfb0908b105a4\transformed\out\jars\classes.jar"
       resolved="com.maru.twitter_login:twitter_login:unspecified"
-      folder="C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\twitter_login\.transforms\dfe2b9a5cbf354168c07b69a82192405\transformed\out"
+      folder="C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\twitter_login\.transforms\c433ab3f6f6ee8322a9dfb0908b105a4\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

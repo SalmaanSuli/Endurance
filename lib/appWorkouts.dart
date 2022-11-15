@@ -1,5 +1,15 @@
+///
+///AppWorkout
+///------------
+///This is a class of "Workouts", which are custom workout created by the user
+///------------
+///A Workout has a name, description, day, state (checked/unchecked), number of sets and reps, and the user's email
+///It can be created, updated, deleted, and displayed as a list, as well as queried
+///
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/material.dart';
 
+//This is a class of Workout, which contains a name (workoutExercise), description, day, state (checked/unchecked), number of sets and reps, and the user's email
 class AppWorkout {
   String id;
   final String workoutDay;
@@ -44,6 +54,7 @@ class AppWorkout {
       );
 }
 
+//A workout can be created by the user
 Future createAppWorkout({
   required String id,
   required String workoutExercise,
@@ -72,11 +83,12 @@ Future createAppWorkout({
   await docUser.set(json);
 }
 
+//A workout can be updated by the user
 Future updateAppWorkoutPage(AppWorkout t) async {
   final docUser = FirebaseFirestore.instance.collection('appWorkout').doc(t.id);
 
   print(t.id);
-  print("HELLLOOOO");
+  //print("HELLLOOOO");
 
   await docUser.update({
     'Day': t.workoutDay,
@@ -89,17 +101,16 @@ Future updateAppWorkoutPage(AppWorkout t) async {
   });
 }
 
+//To display a list of workouts: this is a wrapper that determines whether to display ALL workouts, or only queried ones
 Stream<List<AppWorkout>> readAppWorkouts_wrapper(String _day, String email) {
-  //_freq = varToUse().freq;
-  //return readAppWorkouts_noQuery(email);
   if (_day == "") {
     return readAppWorkouts_noQuery(email);
-    //return readAppWorkouts_noQuery(freq);
   } else {
     return readAppWorkouts(_day, email);
   }
 }
 
+//To display a list of ALL workouts
 Stream<List<AppWorkout>> readAppWorkouts_noQuery(String email) =>
     FirebaseFirestore.instance
         .collection('appWorkout')
@@ -109,10 +120,10 @@ Stream<List<AppWorkout>> readAppWorkouts_noQuery(String email) =>
             .map((doc) => AppWorkout.fromJson(doc.data()))
             .toList());
 
+//To display a list of workouts, queried by day (M, T, W, Th, F, Sa, Su)
 Stream<List<AppWorkout>> readAppWorkouts(String day, String email) =>
     FirebaseFirestore.instance
         .collection('appWorkout')
-        //.orderBy('State')
         .where("Day", isEqualTo: day)
         .where("Email", isEqualTo: email)
         .snapshots()
@@ -120,6 +131,7 @@ Stream<List<AppWorkout>> readAppWorkouts(String day, String email) =>
             .map((doc) => AppWorkout.fromJson(doc.data()))
             .toList());
 
+//To display a single workout
 Future<AppWorkout?> readAppWorkout(String sID) async {
   final docUser = FirebaseFirestore.instance.collection('appWorkout').doc(sID);
   final snapshot = await docUser.get();
@@ -129,6 +141,7 @@ Future<AppWorkout?> readAppWorkout(String sID) async {
   }
 }
 
+/*
 String getWorkoutFreq(String value) {
   if (value == "Daily") {
     return "daily";
@@ -161,3 +174,4 @@ String getReverseWorkoutFreq(String value, bool display) {
   }
   return "";
 }
+*/

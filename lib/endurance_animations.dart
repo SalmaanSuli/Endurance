@@ -1,14 +1,22 @@
+///
+///Animations
+///This class allows for cool animations in the app, especially for button clicks, and adds tons of value to the UX
+///
+
+//Imports
 import 'dart:math';
 import 'dart:ui';
-
 import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
+//End Imports
 
+//An animation can be activated by a page load, or action (e.g. pressing a button)
 enum AnimationTrigger {
   onPageLoad,
   onActionTrigger,
 }
 
+//The state (position and visibility) of the animation
 class AnimationState {
   AnimationState({
     this.offset = const Offset(0, 0),
@@ -20,6 +28,7 @@ class AnimationState {
   final double scale;
 }
 
+//Stores information about the animation
 class AnimationInfo {
   AnimationInfo({
     this.curve = Curves.easeInOut,
@@ -41,6 +50,7 @@ class AnimationInfo {
   late CurvedAnimation curvedAnimation;
 }
 
+//Creates an animation
 void createAnimation(AnimationInfo animation, TickerProvider vsync) {
   animation.curvedAnimation = CurvedAnimation(
     parent: AnimationController(
@@ -51,6 +61,7 @@ void createAnimation(AnimationInfo animation, TickerProvider vsync) {
   );
 }
 
+//When a page is entered, animations are loaded
 void startPageLoadAnimations(
     Iterable<AnimationInfo> animations, TickerProvider vsync) {
   animations.forEach((animation) async {
@@ -63,6 +74,7 @@ void startPageLoadAnimations(
   });
 }
 
+//Preparation to start an animation
 void setupTriggerAnimations(
     Iterable<AnimationInfo> animations, TickerProvider vsync) {
   animations.forEach((animation) {
@@ -70,6 +82,7 @@ void setupTriggerAnimations(
   });
 }
 
+//The maths for the animation
 extension AnimatedWidgetExtension on Widget {
   Widget animated(Iterable<AnimationInfo> animationInfos) {
     final animationInfo = animationInfos.first;

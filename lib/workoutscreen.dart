@@ -2,44 +2,33 @@ import 'package:endurance_fitness/endurance_animations.dart';
 import 'package:endurance_fitness/endurance_theme.dart';
 import 'package:endurance_fitness/endurance_util.dart';
 import 'package:endurance_fitness/endurance_widgets.dart';
-
 import 'package:endurance_fitness/create_task_new_widget.dart';
 import 'package:endurance_fitness/custom_toggle_icon.dart';
 import 'package:endurance_fitness/empty_list_tasks_widget.dart';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
-
 import 'package:endurance_fitness/loginscreen.dart';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
-
 import 'package:endurance_fitness/AppTaskClass.dart';
-
 import 'package:endurance_fitness/main.dart';
 import 'package:endurance_fitness/update_tasksscreen.dart';
 import 'package:endurance_fitness/update_tasksscreen_wrapper.dart';
-
 import 'package:endurance_fitness/globalvars.dart' as globalV;
-
 import 'package:holding_gesture/holding_gesture.dart';
-
 import 'package:push/push.dart';
-
 import 'package:firebase_messaging/firebase_messaging.dart';
-
 import 'package:endurance_fitness/profilescreen.dart';
 import 'package:endurance_fitness/rulesscreen.dart';
-
 import 'package:endurance_fitness/tasksscreen.dart';
-
 import 'package:endurance_fitness/appWorkouts.dart';
-
 import 'package:endurance_fitness/create_workout_new_widget.dart';
-
 import 'package:endurance_fitness/update_workoutscreen.dart';
+import 'package:endurance_fitness/workout_screen.dart';
+import 'package:endurance_fitness/workoutWomen_screen.dart';
+import 'package:endurance_fitness/loseWeight_screen.dart';
+import 'package:endurance_fitness/meal_detail_screen.dart';
 
 class fKEY {
   late String frequency;
@@ -48,19 +37,12 @@ class fKEY {
 }
 
 class MyWorkoutsWidget extends StatefulWidget {
-  //String? freqKey; // = "daily";
-  //MyTasksWidget({Key? key, this.freqKey}) : super(key: key);
-
-  //const MyTasksWidget({Key? key, required this.fKey}) : super(key: key);
-  //final fKEY fKey;
-
   const MyWorkoutsWidget({Key? key}) : super(key: key);
 
   @override
   _MyWorkoutsWidgetState createState() => _MyWorkoutsWidgetState();
 }
 
-//String freq_task = "fff";
 
 class _MyWorkoutsWidgetState extends State<MyWorkoutsWidget>
     with TickerProviderStateMixin {
@@ -90,27 +72,6 @@ class _MyWorkoutsWidgetState extends State<MyWorkoutsWidget>
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
 
-  /*
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Home',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 3: School',
-      style: optionStyle,
-    ),
-  ];
-  */
-
   void _onItemTapped(int index, BuildContext context) {
     setState(() {
       _selectedIndex = index;
@@ -134,6 +95,7 @@ class _MyWorkoutsWidgetState extends State<MyWorkoutsWidget>
   @override
   Widget build(BuildContext context) {
     globalV.context_GLOBAL = context;
+    //UI
     return Container(
       decoration: BoxDecoration(
         color: EnduranceTheme.of(context).secondaryBackground,
@@ -225,13 +187,13 @@ class _MyWorkoutsWidgetState extends State<MyWorkoutsWidget>
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Text(
-                                'My Workouts',
+                                '',
                                 textAlign: TextAlign.center,
                                 style: EnduranceTheme.of(context)
                                     .subtitle2
                                     .override(
                                       fontFamily: 'Outfit',
-                                      fontSize: 2,
+                                      fontSize: 0,
                                     ),
                               ),
                             ],
@@ -587,6 +549,33 @@ class _MyWorkoutsWidgetState extends State<MyWorkoutsWidget>
                   ),
                 ),
               ),
+              Spacer(),
+              FFButtonWidget(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => MyProfileWidget()));
+                  //MyTasksWidget( fKey: fKey.frequency)));
+                },
+                text: 'View Your Workout Guide',
+                options: FFButtonOptions(
+                  width: 220,
+                  height: 40,
+                  color: Color.fromARGB(255, 23, 23, 22),
+                  textStyle: EnduranceTheme.of(context).subtitle2.override(
+                        fontFamily: 'Outfit',
+                        color: Color(0xFFFFFFFF),
+                      ),
+                  elevation: 0,
+                  borderSide: BorderSide(
+                    color: Colors.lightGreen,
+                    width: 0,
+                  ),
+                  //borderRadius: BorderRadius.circular(0),
+                ),
+              ),
+              Spacer(),
               Expanded(
                 flex: 1,
                 child: Text(
@@ -601,7 +590,7 @@ class _MyWorkoutsWidgetState extends State<MyWorkoutsWidget>
                 ),
               ),
               Expanded(
-                flex: 15,
+                flex: 14,
                 //child: FutureBuilder<List<AppTask>>( //StreamBuilder
 
                 child: StreamBuilder<List<AppWorkout>>(
@@ -655,7 +644,13 @@ class _MyWorkoutsWidgetState extends State<MyWorkoutsWidget>
                 //backgroundColor: Colors.black12,
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.person),
+                icon: Icon(Icons.restaurant),
+                label: 'Diet',
+                backgroundColor: Colors.black,
+                //backgroundColor: Colors.black12,
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.logout_rounded),
                 label: 'Logout',
                 backgroundColor: Colors.black,
                 //backgroundColor: Colors.black12,
@@ -678,6 +673,10 @@ class _MyWorkoutsWidgetState extends State<MyWorkoutsWidget>
                       MaterialPageRoute(builder: (context) => MyRulesWidget()));
                   break;
                 case 3:
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => DietPage()));
+                  break;
+                case 4:
                   globalV.logoutGLOBAL(context);
                   Navigator.of(context).push(
                       MaterialPageRoute(builder: (context) => WelcomeScreen()));
@@ -957,13 +956,4 @@ Widget updatePrompt_bottom(BuildContext context) {
       ],
     ),
   );
-}
-
-int _onItemTapped_(int index, BuildContext context) {
-  int _selectedIndex = index;
-  if (_selectedIndex == 0) {
-    Navigator.of(context)
-        .push(MaterialPageRoute(builder: (context) => MyProfileWidget()));
-  }
-  return _selectedIndex;
 }

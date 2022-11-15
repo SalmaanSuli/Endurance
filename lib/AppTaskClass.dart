@@ -1,5 +1,12 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
+///
+///AppTaskClass
+///------------
+///This is a class of "Tasks", which are goals set out by the user for them to accomplish
+///------------
+///A Goal has a name, description, date, and frequency (daily, monthly, etc.)
+///It can be created, updated, deleted, and displayed as a list, as well as queried
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 class MyWidget extends StatelessWidget {
@@ -26,6 +33,7 @@ class MyWidget extends StatelessWidget {
   }
 }
 
+//This is a class of Task/Goal, which contains name, description, email, state (checked/unchecked), date, and frequency(d/m/y)
 class AppTask {
   String id;
   final String taskName;
@@ -67,6 +75,7 @@ class AppTask {
       );
 }
 
+//A task/goal is created, then stored in the database
 Future createAppTask(
     {required String id,
     required String taskName,
@@ -92,6 +101,7 @@ Future createAppTask(
   await docUser.set(json);
 }
 
+//A task/goal can be updated
 Future updateAppTaskPage(AppTask t) async {
   final docUser = FirebaseFirestore.instance.collection('appTasks').doc(t.id);
 
@@ -108,6 +118,7 @@ Future updateAppTaskPage(AppTask t) async {
   });
 }
 
+//A wrapper that allows a widget to display a list of tasks, based on whether "all" tasks are queried, or only a certain category (frequencym e.g daily)
 Stream<List<AppTask>> readAppTasks_wrapper(String _freq, String email) {
   //_freq = varToUse().freq;
   if (_freq == "") {
@@ -118,6 +129,7 @@ Stream<List<AppTask>> readAppTasks_wrapper(String _freq, String email) {
   }
 }
 
+//A list of ALL tasks to be displayed
 Stream<List<AppTask>> readAppTasks_noQuery(String email) =>
     FirebaseFirestore.instance
         .collection('appTasks')
@@ -126,6 +138,7 @@ Stream<List<AppTask>> readAppTasks_noQuery(String email) =>
         .map((snapshot) =>
             snapshot.docs.map((doc) => AppTask.fromJson(doc.data())).toList());
 
+//A list of tasks to be displayed, queried by frequency, e.g. daily
 Stream<List<AppTask>> readAppTasks(String freq, String email) =>
     FirebaseFirestore.instance
         .collection('appTasks')
@@ -136,6 +149,7 @@ Stream<List<AppTask>> readAppTasks(String freq, String email) =>
         .map((snapshot) =>
             snapshot.docs.map((doc) => AppTask.fromJson(doc.data())).toList());
 
+//To display a single task
 Future<AppTask?> readAppTask(String sID) async {
   final docUser = FirebaseFirestore.instance.collection('appTasks').doc(sID);
   final snapshot = await docUser.get();
@@ -145,6 +159,7 @@ Future<AppTask?> readAppTask(String sID) async {
   }
 }
 
+//For UX, since the values in the database are lowercase, but sound appear on the UI as capitalized.
 String getTaskFreq(String value) {
   if (value == "Daily") {
     return "daily";
@@ -160,6 +175,8 @@ String getTaskFreq(String value) {
   return "";
 }
 
+//For UX, since the values in the database are lowercase, but sound appear on the UI as capitalized.
+//The reverse process of the above function
 String getReverseTaskFreq(String value, bool display) {
   if (value == "daily") {
     return "Daily";

@@ -1,23 +1,28 @@
-import 'dart:io';
+///
+///Utilities
+///Some functions that could be useful throughout coding the app, without having to do everything from scratch
+///
+///Note: quite a good share of this class is borrowed code
+///
 
+//Imports
+import 'dart:io';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:json_path/json_path.dart';
 import 'package:timeago/timeago.dart' as timeago;
 import 'package:url_launcher/url_launcher.dart';
-
 import 'lat_lng.dart';
-
-export 'lat_lng.dart';
 export 'place.dart';
 export 'dart:math' show min, max;
 export 'package:intl/intl.dart';
-//export 'package:page_transition/page_transition.dart';
+//End Imports
 
 T valueOrDefault<T>(T? value, T defaultValue) =>
     (value is String && value.isEmpty) || value == null ? defaultValue : value;
 
+//turn DateTime to a string
 String dateTimeFormat(String format, DateTime? dateTime) {
   if (dateTime == null) {
     return '';
@@ -28,6 +33,7 @@ String dateTimeFormat(String format, DateTime? dateTime) {
   return DateFormat(format).format(dateTime);
 }
 
+//Open a URL
 Future launchURL(String url) async {
   var uri = Uri.parse(url).toString();
   try {
@@ -37,6 +43,7 @@ Future launchURL(String url) async {
   }
 }
 
+//Type of number to be displayed (e.g percent), similar to how excel has different formats of numbers
 enum FormatType {
   decimal,
   percent,
@@ -111,6 +118,7 @@ String formatNumber(
   return formattedValue;
 }
 
+//get the current datetime
 DateTime get getCurrentTimestamp => DateTime.now();
 
 extension DateTimeComparisonOperators on DateTime {
@@ -129,6 +137,7 @@ dynamic getJsonField(dynamic response, String jsonPath) {
       : null;
 }
 
+//for responsiveness for different sizes
 bool get isAndroid => !kIsWeb && Platform.isAndroid;
 bool get isiOS => !kIsWeb && Platform.isIOS;
 bool get isWeb => kIsWeb;
@@ -157,6 +166,7 @@ const kTextValidatorEmailRegex =
 const kTextValidatorWebsiteRegex =
     r'(https?:\/\/)?(www\.)[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)|(https?:\/\/)?(www\.)?(?!ww)[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)';
 
+//The showmessage that comes as the bottom of the screen
 void showSnackbar(
   BuildContext context,
   String message, {
@@ -187,6 +197,7 @@ void showSnackbar(
   );
 }
 
+//If string is too long that it overflows (with those black and yellow lines, like construction)
 extension FFStringExt on String {
   String maybeHandleOverflow({int? maxChars, String replacement = ''}) =>
       maxChars != null && length > maxChars

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\salma\\Desktop\\e4app_new\\endurance_fitness\\build\\flutter_login_facebook\\intermediates\\merged_res\\release\\values-es\\values-es.xml",
+            "outputFile": "C:\\Users\\salma\\Desktop\\EnduranceFinal\\e4app_new\\endurance_fitness\\build\\flutter_login_facebook\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-es\\values-es.xml",
             "map": [
                 {
                     "source": "C:\\Users\\salma\\.gradle\\caches\\transforms-3\\b180a644f0acd5488c15483b30ef54dc\\transformed\\jetified-facebook-login-14.1.0\\res\\values-es\\values-es.xml",
@@ -57,7 +57,7 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\salma\\Desktop\\e4app_new\\endurance_fitness\\build\\flutter_login_facebook\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-es\\values-es.xml",
+            "outputFile": "C:\\Users\\salma\\Desktop\\EnduranceFinal\\e4app_new\\endurance_fitness\\build\\flutter_login_facebook\\intermediates\\merged_res\\release\\values-es\\values-es.xml",
             "map": [
                 {
                     "source": "C:\\Users\\salma\\.gradle\\caches\\transforms-3\\b180a644f0acd5488c15483b30ef54dc\\transformed\\jetified-facebook-login-14.1.0\\res\\values-es\\values-es.xml",

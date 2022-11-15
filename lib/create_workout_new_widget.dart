@@ -1,28 +1,32 @@
-//import '../auth/auth_util.dart';
-//import '../backend/backend.dart';
+///
+///Task/Goal: Create a new task
+///This file contains a widget that acts like a pop-up for creating a new Task
+///This Task (if valid) will be added to the database
+///
+///Here lies an interface that allows one to add a task/goal (which is of type AppTask)
 
+//Imports
 import 'package:endurance_fitness/endurance_theme.dart';
 import 'package:endurance_fitness/endurance_util.dart';
 import 'package:endurance_fitness/endurance_widgets.dart';
-
 import 'dart:ui';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:endurance_fitness/AppTaskClass.dart';
-
 import 'package:endurance_fitness/appWorkouts.dart';
-
 import 'package:endurance_fitness/globalvars.dart' as globalV;
+//End Imports
 
+//A class for testing purposes
 class WorkoutNameFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Please fill in all fields' : '';
   }
 }
 
+//A class for testing purposes
 class WorkoutDetailsFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Please fill in all fields' : '';

@@ -1,3 +1,10 @@
+///
+///Toggle Icon Button
+///This class is for UX/UI purposes
+///When toggle is open, show an icon to close
+///When toggle is closed, show an icon to open
+///
+
 import 'package:flutter/material.dart';
 
 class ToggleIcon extends StatelessWidget {

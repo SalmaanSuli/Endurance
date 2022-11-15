@@ -1,32 +1,34 @@
+///
+///Login Screen
+///A class that allows a user to login, provided they have a registered email address, with the correct password
+///
+
+//Imports
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
-
 import 'package:endurance_fitness/endurance_animations.dart';
 import 'package:endurance_fitness/endurance_theme.dart';
 import 'package:endurance_fitness/endurance_util.dart';
 import 'package:endurance_fitness/endurance_widgets.dart';
-
 import 'package:flutter/material.dart';
-//import 'package:google_fonts/google_fonts.dart';
-
 import 'package:endurance_fitness/main.dart';
 import 'package:endurance_fitness/homescreen.dart';
 import 'package:endurance_fitness/signupscreen.dart';
 import 'package:endurance_fitness/tasksscreen.dart';
-
 import 'package:crypto/crypto.dart';
 import 'dart:convert'; // for the utf8.encode method
-
 import 'package:crypt/crypt.dart';
-
 import 'package:endurance_fitness/globalvars.dart' as globalV;
+//End Imports
 
+//This class is for testing purposes (Email)
 class EmailFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Please fill in all fields' : '';
   }
 }
 
+//This class is for testing purposes (Password)
 class PasswordFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'incorrect password' : '';
@@ -433,28 +435,18 @@ class _LoginWidgetState extends State<LoginWidget> {
   }
 }
 
+//The functions returns true is the password is correct, otherwise false
+//It uses sha256 hashing to do this
 bool isCorrectPass(
   String pass,
   String hashedPass,
   BuildContext context,
 ) {
-  //String hashedPass;
-  //hashedPass = pass;
-
-  /*
-  if (pass == hashedPass) {
-    return true;
-  }
-  */
-
   final h =
       Crypt.sha256(pass, rounds: 10000, salt: 'abcdefghijklmnop').toString();
-  print("toprint");
-  print(h);
-  debugPrint(h);
-
-  //printSM(context, "hashed: " + h);
-  //ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("hash")));
+  //print("toprint");
+  //print(h);
+  //debugPrint(h);
 
   if (h == hashedPass) {
     return true;
@@ -463,15 +455,16 @@ bool isCorrectPass(
         .showSnackBar(SnackBar(content: Text("Incorrect Password")));
   }
   return false;
-  //final h = Crypt(hashString);
 }
 
+//This allows for an admin to see a list of all users
 Stream<List<User>> readUsers() => FirebaseFirestore.instance
     .collection('allUsers')
     .snapshots()
     .map((snapshot) =>
         snapshot.docs.map((doc) => User.fromJson(doc.data())).toList());
 
+//This allows a reading of a single user
 Future<User?> readUser(String sID) async {
   final docUser = FirebaseFirestore.instance.collection('users').doc(sID);
   final snapshot = await docUser.get();
@@ -481,6 +474,7 @@ Future<User?> readUser(String sID) async {
   }
 }
 
+//This is a class of User, with a name, email, and password
 class User {
   String id;
   final String email;
@@ -508,6 +502,7 @@ class User {
       password: json['password']);
 }
 
+//This changes the entered password into a hashed string
 String hashPass(String pass) {
   String hashedPass;
   hashedPass = pass;
@@ -530,6 +525,7 @@ String hashPass(String pass) {
   return hashedPass;
 }
 
+//Checks if the login details are correct, then logs in, otherwise displays error message
 Future doLogin(BuildContext context, String email, String password) async {
   if (email == "" || password == "") {
     ScaffoldMessenger.of(context)
@@ -537,37 +533,15 @@ Future doLogin(BuildContext context, String email, String password) async {
     return;
   }
 
-  /*
-  String searchKey = email;
-  Stream streamQuery = FirebaseFirestore.instance
-      .collection('appUsers')
-      .where('email', isEqualTo: searchKey)
-      //.where('fieldName', isLessThan: searchKey +'z')
-      .snapshots();
-
-  final snapshot = await streamQuery.first;
-  */
-
   final docUser = FirebaseFirestore.instance.collection('appUsers').doc(email);
 
   final snapshot = await docUser.get();
-  //ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(email + " " + password)));
-  /*
-  final dUser = User.fromJson({
-    'id': 'id',
-    'email': email,
-    'name': 'name',
-    'password': password,
-  });
-  */
+
   String dbPass = "";
   if (snapshot.exists) {
     final dUser = User.fromJson(snapshot.data()!);
     dbPass = dUser.password;
   }
-
-  //ScaffoldMessenger.of(context).showSnackBar( SnackBar(content: Text("hello  " + password + " " + dbPass)));
-  //final dbPass = dUser.password;
 
   bool correctPass = isCorrectPass(password, dbPass, context);
 
@@ -590,6 +564,7 @@ Future doLogin(BuildContext context, String email, String password) async {
   }
 }
 
+//shows a showmessage (snackbar message), but in a much more shortened way
 void printSM(
   BuildContext context,
   String s,

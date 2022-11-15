@@ -1,23 +1,30 @@
+///
+///Task (Update) Screen
+///This class contains the UI elements for updating a Task
+///This allows for the actual updating of a Task
+///
+
+//Imports
 import 'package:endurance_fitness/endurance_theme.dart';
 import 'package:endurance_fitness/endurance_util.dart';
 import 'package:endurance_fitness/endurance_widgets.dart';
-
 import 'dart:ui';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:endurance_fitness/AppTaskClass.dart';
-
 import 'package:endurance_fitness/globalvars.dart' as globalV;
+//End Imports
 
+//This is for testing purposes (Name)
 class TaskNameFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Please fill in all fields' : '';
   }
 }
 
+//This is for testing purposes (Details)
 class DetailsFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Please fill in all fields' : '';
@@ -31,6 +38,7 @@ class UpdateTaskNewWidget extends StatefulWidget {
   _UpdateTaskNewWidgetState createState() => _UpdateTaskNewWidgetState();
 }
 
+//UI
 class _UpdateTaskNewWidgetState extends State<UpdateTaskNewWidget> {
   TextEditingController? textController1;
   TextEditingController? textController2;
@@ -47,15 +55,13 @@ class _UpdateTaskNewWidgetState extends State<UpdateTaskNewWidget> {
     'None',
   ];
 
-  //final oldT = readAppTask(globalV.id_GLOBAL);
-
+  //variables to be used throughout this file:
   String taskName_db = globalV.taskName_db_GLOBAL;
   String taskDescription_db = globalV.taskDescription_db_GLOBAL;
   String taskEmail_db = globalV.email_GLOBAL;
   bool taskState_db = globalV.taskState_db_GLOBAL;
   DateTime datePicked = globalV.datePicked_GLOBAL;
   String taskFreq_db = globalV.taskFreq_db_GLOBAL;
-
   String dropdownvalue = getReverseTaskFreq(globalV.taskFreq_db_GLOBAL, false);
 
   @override

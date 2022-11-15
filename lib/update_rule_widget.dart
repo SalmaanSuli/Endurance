@@ -1,33 +1,37 @@
-//import '../auth/auth_util.dart';
-//import '../backend/backend.dart';
+///
+///Rule (Update) Screen
+///This class contains the UI elements for updating a Rule
+///It also allows updating a Rule
+///
 
+//Imports
 import 'package:endurance_fitness/endurance_theme.dart';
 import 'package:endurance_fitness/endurance_util.dart';
 import 'package:endurance_fitness/endurance_widgets.dart';
-
 import 'dart:ui';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-//import 'package:endurance_fitness/AppTaskClass.dart';
 import 'package:endurance_fitness/AppRuleClass.dart';
-
 import 'package:endurance_fitness/globalvars.dart' as globalV;
+//End Imports
 
+//This is for testing purposes (Name)
 class RuleNameFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Please fill in all fields' : '';
   }
 }
 
+//This is for testing purposes (Details)
 class RuleDetailsFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Please fill in all fields' : '';
   }
 }
 
+//This is for testing purposes (Desc)
 class RuleDescriptionFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Please fill in all fields' : '';
@@ -41,12 +45,12 @@ class UpdateRuleNewWidget extends StatefulWidget {
   _UpdateRuleNewWidgetState createState() => _UpdateRuleNewWidgetState();
 }
 
+//UI
 class _UpdateRuleNewWidgetState extends State<UpdateRuleNewWidget> {
   TextEditingController? textController1;
   TextEditingController? textController2;
 
-  //final oldT = readAppTask(globalV.id_GLOBAL);
-
+  //Variables to be used throughout this class:
   String ruleName_db = globalV.ruleName_db_GLOBAL;
   String ruleDescription_db = globalV.ruleDescription_db_GLOBAL;
   String ruleEmail_db = globalV.email_GLOBAL;

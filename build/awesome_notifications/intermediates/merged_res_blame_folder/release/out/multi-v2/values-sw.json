@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\salma\\Desktop\\e4app_new\\endurance_fitness\\build\\awesome_notifications\\intermediates\\merged_res\\release\\values-sw\\values-sw.xml",
+            "outputFile": "C:\\Users\\salma\\Desktop\\EnduranceFinal\\e4app_new\\endurance_fitness\\build\\awesome_notifications\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-sw\\values-sw.xml",
             "map": [
                 {
                     "source": "C:\\Users\\salma\\.gradle\\caches\\transforms-3\\eb430d2ed3cd09eb5ba32ca89355e03c\\transformed\\appcompat-1.5.1\\res\\values-sw\\values-sw.xml",
@@ -33,7 +33,7 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\salma\\Desktop\\e4app_new\\endurance_fitness\\build\\awesome_notifications\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-sw\\values-sw.xml",
+            "outputFile": "C:\\Users\\salma\\Desktop\\EnduranceFinal\\e4app_new\\endurance_fitness\\build\\awesome_notifications\\intermediates\\merged_res\\release\\values-sw\\values-sw.xml",
             "map": [
                 {
                     "source": "C:\\Users\\salma\\.gradle\\caches\\transforms-3\\eb430d2ed3cd09eb5ba32ca89355e03c\\transformed\\appcompat-1.5.1\\res\\values-sw\\values-sw.xml",

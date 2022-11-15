@@ -1,40 +1,38 @@
+///
+///Rules Screen
+///This class displays a list of Rules (fundamental principles) of the user
+///
+
+//Imports
 import 'package:endurance_fitness/endurance_animations.dart';
 import 'package:endurance_fitness/endurance_theme.dart';
 import 'package:endurance_fitness/endurance_util.dart';
 import 'package:endurance_fitness/endurance_widgets.dart';
-
 import 'package:endurance_fitness/create_rule_new_widget.dart';
 import 'package:endurance_fitness/custom_toggle_icon.dart';
 import 'package:endurance_fitness/empty_list_tasks_widget.dart';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
-
 import 'package:endurance_fitness/loginscreen.dart';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
-
 import 'package:endurance_fitness/AppRuleClass.dart';
-
 import 'package:endurance_fitness/main.dart';
 import 'package:endurance_fitness/update_tasksscreen.dart';
 import 'package:endurance_fitness/update_tasksscreen_wrapper.dart';
-
 import 'package:endurance_fitness/globalvars.dart' as globalV;
-
 import 'package:holding_gesture/holding_gesture.dart';
-
 import 'package:push/push.dart';
-
 import 'package:firebase_messaging/firebase_messaging.dart';
-
 import 'package:endurance_fitness/profilescreen.dart';
 import 'package:endurance_fitness/tasksscreen.dart';
-
+import 'package:endurance_fitness/workoutscreen.dart';
 import 'package:endurance_fitness/update_rule_widget.dart';
+import 'meal_detail_screen.dart';
+//End Imports
 
+//a class to keep track of frequency throughout different parts of the file (and not be restricted by encapsulation)
 class fKEY {
   late String frequency;
 
@@ -52,6 +50,8 @@ class _MyRulesWidgetState extends State<MyRulesWidget>
     with TickerProviderStateMixin {
   final scaffoldKey = GlobalKey<ScaffoldState>();
   String freq_task = "";
+
+  //Some cool animations
   final animationsMap = {
     'containerOnPageLoadAnimation': AnimationInfo(
       trigger: AnimationTrigger.onPageLoad,
@@ -186,7 +186,7 @@ class _MyRulesWidgetState extends State<MyRulesWidget>
                                     .subtitle2
                                     .override(
                                       fontFamily: 'Outfit',
-                                      fontSize: 2,
+                                      fontSize: 0,
                                     ),
                               ),
                             ],
@@ -298,7 +298,13 @@ class _MyRulesWidgetState extends State<MyRulesWidget>
                 //backgroundColor: Colors.black12,
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.person),
+                icon: Icon(Icons.restaurant),
+                label: 'Diet',
+                backgroundColor: Colors.black,
+                //backgroundColor: Colors.black12,
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.logout_rounded),
                 label: 'Logout',
                 backgroundColor: Colors.black,
                 //backgroundColor: Colors.black12,
@@ -312,7 +318,7 @@ class _MyRulesWidgetState extends State<MyRulesWidget>
               switch (index) {
                 case 0:
                   Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => MyProfileWidget()));
+                      builder: (context) => MyWorkoutsWidget()));
                   break;
                 case 1:
                   Navigator.of(context).push(
@@ -321,6 +327,11 @@ class _MyRulesWidgetState extends State<MyRulesWidget>
                 case 2:
                   break;
                 case 3:
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => DietPage()));
+                  break;
+                case 4:
+                  globalV.logoutGLOBAL(context);
                   Navigator.of(context).push(
                       MaterialPageRoute(builder: (context) => WelcomeScreen()));
                   break;
@@ -336,6 +347,7 @@ class _MyRulesWidgetState extends State<MyRulesWidget>
   }
 }
 
+//Displaying a Rule (to be displayed as a list in the context build)
 Widget buildAppRule(AppRule t) => ListTile(
     leading: CircleAvatar(
         child: Text('o', style: TextStyle(color: Colors.white)),
@@ -358,6 +370,7 @@ Widget buildAppRule(AppRule t) => ListTile(
       );
     });
 
+//When the prompt is displayed, and the user selects "Update", they can actually update the values through this function
 Future updateRuleTask(AppRule t) async {
   final docUser = FirebaseFirestore.instance.collection('appRules').doc(t.id);
 
@@ -368,9 +381,7 @@ Future updateRuleTask(AppRule t) async {
   });
 }
 
-//////////////////////////////////////////////////
-///
-
+//For updating a Rule (allows update, delete, and cancel)
 Widget updateRulePrompt_bottom(BuildContext context) {
   return Container(
     color: Colors.transparent,
@@ -526,6 +537,7 @@ Widget updateRulePrompt_bottom(BuildContext context) {
   );
 }
 
+//For selecting different navigation items
 int _onItemTapped_(int index, BuildContext context) {
   int _selectedIndex = index;
   if (_selectedIndex == 0) {

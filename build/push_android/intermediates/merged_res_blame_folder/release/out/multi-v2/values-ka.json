@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\salma\\Desktop\\e4app_new\\endurance_fitness\\build\\push_android\\intermediates\\merged_res\\release\\values-ka\\values-ka.xml",
+            "outputFile": "C:\\Users\\salma\\Desktop\\EnduranceFinal\\e4app_new\\endurance_fitness\\build\\push_android\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-ka\\values-ka.xml",
             "map": [
                 {
                     "source": "C:\\Users\\salma\\.gradle\\caches\\transforms-3\\db32efc2f3664d84a19bdcc0b6153b26\\transformed\\jetified-play-services-basement-17.2.1\\res\\values-ka\\values.xml",
@@ -57,7 +57,7 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\salma\\Desktop\\e4app_new\\endurance_fitness\\build\\push_android\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-ka\\values-ka.xml",
+            "outputFile": "C:\\Users\\salma\\Desktop\\EnduranceFinal\\e4app_new\\endurance_fitness\\build\\push_android\\intermediates\\merged_res\\release\\values-ka\\values-ka.xml",
             "map": [
                 {
                     "source": "C:\\Users\\salma\\.gradle\\caches\\transforms-3\\db32efc2f3664d84a19bdcc0b6153b26\\transformed\\jetified-play-services-basement-17.2.1\\res\\values-ka\\values.xml",

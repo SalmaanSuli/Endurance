@@ -1,19 +1,22 @@
+///
+///Task Wrapper (Update) Screen
+///This class contains the UI elements for updating a Task (it is a wrapper, which is clicked, then allows the actual update to happen)
+///
+
+//Imports
 import 'package:endurance_fitness/endurance_theme.dart';
 import 'package:endurance_fitness/endurance_util.dart';
 import 'package:endurance_fitness/endurance_widgets.dart';
-
 import 'dart:ui';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:endurance_fitness/AppTaskClass.dart';
 import 'package:endurance_fitness/update_tasksscreen.dart';
-
 import 'package:endurance_fitness/globalvars.dart' as globalV;
-
 import 'package:endurance_fitness/main.dart';
+//End Imports
 
 class UpdateTaskWrapperWidget extends StatefulWidget {
   const UpdateTaskWrapperWidget({Key? key}) : super(key: key);
@@ -140,8 +143,7 @@ class _UpdateTaskWrapperWidgetState extends State<UpdateTaskWrapperWidget> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) =>
-                                        UpdateTaskNewWidget(),
+                                    builder: (context) => UpdateTaskNewWidget(),
                                   ));
                             },
                             text: 'Update Task',

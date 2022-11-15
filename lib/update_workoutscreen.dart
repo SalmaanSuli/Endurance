@@ -1,28 +1,31 @@
-//import '../auth/auth_util.dart';
-//import '../backend/backend.dart';
+///
+///Workout (Update) Screen
+///This class contains the UI elements for updating a Workout
+///This allows for the actual updating of a Workout
+///
 
+//Imports
 import 'package:endurance_fitness/endurance_theme.dart';
 import 'package:endurance_fitness/endurance_util.dart';
 import 'package:endurance_fitness/endurance_widgets.dart';
-
 import 'dart:ui';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:endurance_fitness/AppTaskClass.dart';
-
 import 'package:endurance_fitness/globalvars.dart' as globalV;
-
 import 'package:endurance_fitness/appWorkouts.dart';
+//End Imports
 
+//This is for testing purposes (Name)
 class NameFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Please fill in all fields' : '';
   }
 }
 
+//This is for testing purposes (Details)
 class DetailsFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Please fill in all fields' : '';
@@ -36,6 +39,7 @@ class UpdateWorkoutNewWidget extends StatefulWidget {
   _UpdateWorkoutNewWidgetState createState() => _UpdateWorkoutNewWidgetState();
 }
 
+//UI
 class _UpdateWorkoutNewWidgetState extends State<UpdateWorkoutNewWidget> {
   TextEditingController? textController1;
   TextEditingController? textController2;
@@ -57,7 +61,7 @@ class _UpdateWorkoutNewWidgetState extends State<UpdateWorkoutNewWidget> {
     'None',
   ];
 
-  //final oldT = readAppTask(globalV.id_GLOBAL);
+  //variables to be used throughout this class:
 
   String wkName_db = globalV.wkExercise_db_GLOBAL;
   String wkDescription_db = globalV.wkDescription_db_GLOBAL;

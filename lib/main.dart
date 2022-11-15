@@ -1,20 +1,26 @@
+///
+///Main File
+///This contains the MAIN function and is the beginning of the app
+///
+///This file has the UI elements that:
+/// 1. Loads the database
+/// 2. Welcomes the user
+/// 3. Allows them to enter the app
+///
+
+//Imports
 import 'package:endurance_fitness/tasksscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:endurance_fitness/homescreen.dart'; //import 'package:flutter/widgets.dart';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
-
 import 'package:endurance_fitness/endurance_animations.dart';
-
 import 'package:endurance_fitness/endurance_theme.dart';
-
 import 'package:endurance_fitness/endurance_widgets.dart';
-
 import 'package:endurance_fitness/globalvars.dart' as globalV;
+//End imports
 
-//void main() => runApp(MyApp());
-
+//Async since it first connects the database
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
@@ -27,12 +33,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    /*
-    Navigator.of(context)
-        .push(MaterialPageRoute(builder: (context) => HomeScreenWidget()));
-    */
     return MaterialApp(
-      title: 'Endurance Home', //'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Endurance Home',
       home: WelcomeScreen(),
     );
   }
@@ -163,8 +166,7 @@ class WelcomeScreen extends StatelessWidget {
                                   //borderRadius: BorderRadius.circular(8),
                                 ),
                               ),
-                            ),
-                            */
+                            ),*/
                           ],
                         ),
                       ),

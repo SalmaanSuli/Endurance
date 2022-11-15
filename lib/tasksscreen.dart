@@ -1,40 +1,42 @@
-import 'package:endurance_fitness/endurance_animations.dart';
+///
+///Task (Goals) Screen
+///This class contains the UI elements for Tasks
+///It also allows updating, deleting, and displaying of tasks
+///In addition, it has a function that maps a datetime to a displayable string
+///
+
+//Imports
+import 'endurance_animations.dart';
 import 'package:endurance_fitness/endurance_theme.dart';
 import 'package:endurance_fitness/endurance_util.dart';
 import 'package:endurance_fitness/endurance_widgets.dart';
-
 import 'package:endurance_fitness/create_task_new_widget.dart';
 import 'package:endurance_fitness/custom_toggle_icon.dart';
 import 'package:endurance_fitness/empty_list_tasks_widget.dart';
-
+import 'package:endurance_fitness/meal_detail_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
-
 import 'package:endurance_fitness/loginscreen.dart';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
-
 import 'package:endurance_fitness/AppTaskClass.dart';
-
 import 'package:endurance_fitness/main.dart';
 import 'package:endurance_fitness/update_tasksscreen.dart';
 import 'package:endurance_fitness/update_tasksscreen_wrapper.dart';
-
 import 'package:endurance_fitness/globalvars.dart' as globalV;
-
 import 'package:holding_gesture/holding_gesture.dart';
-
 import 'package:push/push.dart';
-
 import 'package:firebase_messaging/firebase_messaging.dart';
-
 import 'package:endurance_fitness/profilescreen.dart';
 import 'package:endurance_fitness/rulesscreen.dart';
-
 import 'package:endurance_fitness/workoutscreen.dart';
+import 'package:endurance_fitness/meal.dart';
+import 'homescreen.dart';
+import 'meal.dart';
+//End Imports
 
+//keeps track of variable throughout program
 class fKEY {
   late String frequency;
 
@@ -42,24 +44,20 @@ class fKEY {
 }
 
 class MyTasksWidget extends StatefulWidget {
-  //String? freqKey; // = "daily";
-  //MyTasksWidget({Key? key, this.freqKey}) : super(key: key);
-
-  //const MyTasksWidget({Key? key, required this.fKey}) : super(key: key);
-  //final fKEY fKey;
-
   const MyTasksWidget({Key? key}) : super(key: key);
 
   @override
   _MyTasksWidgetState createState() => _MyTasksWidgetState();
 }
 
-//String freq_task = "fff";
-
+//UI
 class _MyTasksWidgetState extends State<MyTasksWidget>
     with TickerProviderStateMixin {
   final scaffoldKey = GlobalKey<ScaffoldState>();
-  String freq_task = "";
+
+  String freq_task = ""; //frequency of task
+
+  //cool animations
   final animationsMap = {
     'containerOnPageLoadAnimation': AnimationInfo(
       trigger: AnimationTrigger.onPageLoad,
@@ -84,27 +82,7 @@ class _MyTasksWidgetState extends State<MyTasksWidget>
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
 
-  /*
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Home',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 3: School',
-      style: optionStyle,
-    ),
-  ];
-  */
-
+  //for navigation selection
   void _onItemTapped(int index, BuildContext context) {
     setState(() {
       _selectedIndex = index;
@@ -225,7 +203,7 @@ class _MyTasksWidgetState extends State<MyTasksWidget>
                                     .subtitle2
                                     .override(
                                       fontFamily: 'Outfit',
-                                      fontSize: 2,
+                                      fontSize: 0,
                                     ),
                               ),
                             ],
@@ -550,7 +528,13 @@ class _MyTasksWidgetState extends State<MyTasksWidget>
                 //backgroundColor: Colors.black12,
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.person),
+                icon: Icon(Icons.restaurant),
+                label: 'Diet',
+                backgroundColor: Colors.black,
+                //backgroundColor: Colors.black12,
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.logout_rounded),
                 label: 'Logout',
                 backgroundColor: Colors.black,
                 //backgroundColor: Colors.black12,
@@ -574,6 +558,11 @@ class _MyTasksWidgetState extends State<MyTasksWidget>
                   break;
                 case 3:
                   Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => DietPage()));
+                  break;
+                case 4:
+                  globalV.logoutGLOBAL(context);
+                  Navigator.of(context).push(
                       MaterialPageRoute(builder: (context) => WelcomeScreen()));
                   break;
               }
@@ -588,6 +577,17 @@ class _MyTasksWidgetState extends State<MyTasksWidget>
   }
 }
 
+class Meal {
+  late String mealTime;
+  late String name;
+  late String imagePath;
+  late String kiloCaloriesBurnt;
+  late String timeTaken;
+  late String preparation;
+  late List<dynamic> ingredients;
+}
+
+//Creates a Task block to be displayed
 Widget buildAppTask(AppTask t) => ListTile(
       leading: CircleAvatar(child: Text('o')),
       title: Text(t.taskName),
@@ -607,6 +607,7 @@ Widget buildAppTask(AppTask t) => ListTile(
     */
     );
 
+//Creates a Task block to be displayed with a checkbox
 Widget buildAppTask_check(AppTask t) => CheckboxListTile(
       contentPadding: EdgeInsets.fromLTRB(12, 12, 8, 12),
       title: Text(t.taskName,
@@ -660,6 +661,7 @@ Widget buildAppTask_check(AppTask t) => CheckboxListTile(
       tileColor: Color(0xFF171717),
     );
 
+//Updates the Task
 Future updateAppTask(AppTask t) async {
   final docUser = FirebaseFirestore.instance
       .collection('appTasks')
@@ -675,6 +677,7 @@ Future updateAppTask(AppTask t) async {
   });
 }
 
+//Custom function to get a datetime format into a specific string format
 String getDateTimeForAppTaskWidget(DateTime dt) {
   //dt format: "2022-10-09T16:05:00.0000"
   String s = "";
@@ -735,6 +738,7 @@ String getDateTimeForAppTaskWidget(DateTime dt) {
   return s;
 }
 
+/*
 Color getColor(Set<MaterialState> states) {
   const Set<MaterialState> interactiveStates = <MaterialState>{
     MaterialState.pressed,
@@ -746,10 +750,11 @@ Color getColor(Set<MaterialState> states) {
   }
   return Colors.green;
 }
-
+*/
 //////////////////////////////////////////////////
 ///
 
+//A UI element that checks whether it must be updated/deleted or cancel the action
 Widget updatePrompt_bottom(BuildContext context) {
   return Container(
     color: Colors.transparent,
@@ -931,6 +936,7 @@ Widget updatePrompt_bottom(BuildContext context) {
   );
 }
 
+//navigation selection
 int _onItemTapped_(int index, BuildContext context) {
   int _selectedIndex = index;
   if (_selectedIndex == 0) {

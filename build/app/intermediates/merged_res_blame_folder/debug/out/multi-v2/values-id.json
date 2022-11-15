@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\salma\\Desktop\\e4app_new\\endurance_fitness\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-id\\values-id.xml",
+            "outputFile": "C:\\Users\\salma\\Desktop\\EnduranceFinal\\e4app_new\\endurance_fitness\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-id\\values-id.xml",
             "map": [
                 {
                     "source": "C:\\Users\\salma\\.gradle\\caches\\transforms-3\\d0f6f91a5fd34ff396400024efb859d5\\transformed\\jetified-facebook-common-14.1.0\\res\\values-id\\values-id.xml",

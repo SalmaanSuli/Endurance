@@ -1,3 +1,5 @@
+
+/*
 import 'lat_lng.dart';
 
 class FFPlace {
@@ -44,3 +46,4 @@ class FFPlace {
       country == country &&
       zipCode == zipCode;
 }
+*/

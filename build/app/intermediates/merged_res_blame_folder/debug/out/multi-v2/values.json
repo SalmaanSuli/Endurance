@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\salma\\Desktop\\e4app_new\\endurance_fitness\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\salma\\Desktop\\EnduranceFinal\\e4app_new\\endurance_fitness\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\salma\\.gradle\\caches\\transforms-3\\29957fddd8dd8fa6e101f3f5f25e3bd6\\transformed\\jetified-firebase-messaging-23.0.8\\res\\values\\values.xml",
@@ -56,6 +56,25 @@
                         "endLines": "48,49,50,51,52,53,54,55,56,57,58,59,199,200,201,203,204,205,206,207,208,209,210,211,1964,1970,1981,1992,1995,3546",
                         "endColumns": "51,87,79,78,63,76,74,66,81,80,72,54,68,78,63,73,72,72,71,72,72,64,68,64,12,12,12,12,12,24",
                         "endOffsets": "3132,3220,3300,3379,3443,3520,3595,3662,3744,3825,3898,3953,13435,13514,13578,13722,13795,13868,13940,14013,14086,14151,14220,14285,133940,134290,134911,135542,135721,193910"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\salma\\Desktop\\EnduranceFinal\\e4app_new\\endurance_fitness\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "176,832",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "483,998"
+                    },
+                    "to": {
+                        "startLines": "1517,1522",
+                        "startColumns": "4,4",
+                        "startOffsets": "99569,99877",
+                        "endLines": "1521,1524",
+                        "endColumns": "12,12",
+                        "endOffsets": "99872,100041"
                     }
                 },
                 {
@@ -275,6 +294,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\salma\\Desktop\\EnduranceFinal\\e4app_new\\endurance_fitness\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,713",
+                        "endColumns": "143,81,103,108,119,98,75",
+                        "endOffsets": "194,276,380,489,609,708,784"
+                    },
+                    "to": {
+                        "startLines": "401,406,407,408,409,410,411",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "28242,28683,28765,28869,28978,29098,29197",
+                        "endColumns": "143,81,103,108,119,98,75",
+                        "endOffsets": "28381,28760,28864,28973,29093,29192,29268"
+                    }
+                },
+                {
                     "source": "C:\\Users\\salma\\.gradle\\caches\\transforms-3\\575b1fcd65f1fa3cb993ddb88b856e21\\transformed\\jetified-savedstate-1.2.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -289,25 +325,6 @@
                         "startOffsets": "21051",
                         "endColumns": "53",
                         "endOffsets": "21100"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\salma\\Desktop\\e4app_new\\endurance_fitness\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "176,832",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "483,998"
-                    },
-                    "to": {
-                        "startLines": "1517,1522",
-                        "startColumns": "4,4",
-                        "startOffsets": "99569,99877",
-                        "endLines": "1521,1524",
-                        "endColumns": "12,12",
-                        "endOffsets": "99872,100041"
                     }
                 },
                 {
@@ -344,23 +361,6 @@
                         "startOffsets": "2472,2530,2596,2659,13058,13129,28174,28386,28453,28532",
                         "endColumns": "57,65,62,61,70,71,67,66,78,68",
                         "endOffsets": "2525,2591,2654,2716,13124,13196,28237,28448,28527,28596"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\salma\\Desktop\\e4app_new\\endurance_fitness\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,713",
-                        "endColumns": "143,81,103,108,119,98,75",
-                        "endOffsets": "194,276,380,489,609,708,784"
-                    },
-                    "to": {
-                        "startLines": "401,406,407,408,409,410,411",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "28242,28683,28765,28869,28978,29098,29197",
-                        "endColumns": "143,81,103,108,119,98,75",
-                        "endOffsets": "28381,28760,28864,28973,29093,29192,29268"
                     }
                 },
                 {

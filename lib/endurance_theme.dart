@@ -1,11 +1,26 @@
+///
+///Theme
+///It made sense to make this class to be able to reuse the same fonts and colours throughout the app
+///
+///This class does a few things:
+/// 1. Ability to switch between light and dark mode based on the users preferences
+/// 2. As a prerequisite to the point above, we get shared preferences
+/// 3. Stores theme styles for Text (font, color, weight, size)
+/// 4. Stores theme colours
+///
+///Note: quite a good share of this class is borrowed code (especially the shared preferences and light/dark mode code)
+///
+
+//Imports
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:shared_preferences/shared_preferences.dart';
+//End Imports
 
 const kThemeModeKey = '__theme_mode__';
 SharedPreferences? _prefs;
 
+//get Shared Preferences and figure out if it is light or dark mode
 abstract class EnduranceTheme {
   static Future initialize() async =>
       _prefs = await SharedPreferences.getInstance();
@@ -18,6 +33,7 @@ abstract class EnduranceTheme {
             : ThemeMode.light;
   }
 
+  //So when the app shuts down, it is saved in the phone
   static void saveThemeMode(ThemeMode mode) => mode == ThemeMode.system
       ? _prefs?.remove(kThemeModeKey)
       : _prefs?.setBool(kThemeModeKey, mode == ThemeMode.dark);
@@ -41,6 +57,7 @@ abstract class EnduranceTheme {
   late Color darkBG;
   late Color primaryBlack;
 
+  //This creates a theme for text: font, color, weight, and size
   TextStyle get title1 => GoogleFonts.getFont(
         'Poppins',
         color: primaryText,
@@ -85,6 +102,7 @@ abstract class EnduranceTheme {
       );
 }
 
+//Colours for light mode
 class LightModeTheme extends EnduranceTheme {
   late Color primaryColor = const Color(0xFF2BC63D);
   late Color secondaryColor = const Color(0xFF9AC62B);
@@ -102,6 +120,7 @@ class LightModeTheme extends EnduranceTheme {
   late Color primaryBlack = Color(0xFF131619);
 }
 
+//Colors for dark mode
 class DarkModeTheme extends EnduranceTheme {
   late Color primaryColor = const Color(0xFF2BC63D);
   late Color secondaryColor = const Color(0xFF9AC62B);
@@ -119,6 +138,7 @@ class DarkModeTheme extends EnduranceTheme {
   late Color primaryBlack = Color(0xFF131619);
 }
 
+//Gets the font the user uses on their phone and copies it to the ap, for their convenience
 extension TextStyleHelper on TextStyle {
   TextStyle override({
     String? fontFamily,

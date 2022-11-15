@@ -6,39 +6,39 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml
+8-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="31" />
-9-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml
+9-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-67
-11-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-64
+11-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-67
+11-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-64
 12    <uses-permission android:name="android.permission.WAKE_LOCK" />
-12-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-68
-12-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-65
+12-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-68
+12-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-65
 13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
-13-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-79
-13-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:11:22-76
+13-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-79
+13-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:11:22-76
 14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-14-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:13:5-77
-14-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:13:22-74
+14-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:13:5-77
+14-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:13:22-74
 15    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
-15-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-89
-15-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-86
+15-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-89
+15-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-86
 16    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-16-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-81
-16-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:11:22-78
+16-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-81
+16-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:11:22-78
 17    <uses-permission android:name="android.permission.VIBRATE" />
-17-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:12:5-66
-17-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:12:22-63
+17-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:12:5-66
+17-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:12:22-63
 18
 19    <queries>
-19-->[:twitter_login] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\twitter_login\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-13:15
+19-->[:twitter_login] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\twitter_login\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-13:15
 20        <intent>
-20-->[:twitter_login] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\twitter_login\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-12:18
+20-->[:twitter_login] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\twitter_login\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-12:18
 21            <action android:name="android.support.customtabs.action.CustomTabsService" />
-21-->[:twitter_login] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\twitter_login\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-90
-21-->[:twitter_login] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\twitter_login\intermediates\merged_manifest\release\AndroidManifest.xml:11:21-87
+21-->[:twitter_login] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\twitter_login\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-90
+21-->[:twitter_login] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\twitter_login\intermediates\merged_manifest\release\AndroidManifest.xml:11:21-87
 22        </intent>
 23    </queries>
 24
@@ -107,31 +107,31 @@
 49
 50    <application
 51        android:name="io.flutter.app.FlutterMultiDexApplication"
-51-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:5:9-42
+51-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:5:9-42
 52        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 52-->[androidx.core:core:1.8.0] C:\Users\salma\.gradle\caches\transforms-3\0ce731f8c62e88af9af421907435d7da\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 53        android:icon="@mipmap/ic_launcher"
-53-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:6:9-43
+53-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:6:9-43
 54        android:label="endurance_fitness"
-54-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:4:9-42
+54-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:4:9-42
 55        android:supportsRtl="true" >
 55-->[com.facebook.android:facebook-login:14.1.0] C:\Users\salma\.gradle\caches\transforms-3\b180a644f0acd5488c15483b30ef54dc\transformed\jetified-facebook-login-14.1.0\AndroidManifest.xml:28:18-44
 56        <activity
-56-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:7:9-28:20
+56-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:7:9-28:20
 57            android:name="com.example.endurance_fitness.MainActivity"
-57-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:8:13-41
+57-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:8:13-41
 58            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-58-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:12:13-163
+58-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:12:13-163
 59            android:exported="true"
-59-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:9:13-36
+59-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:9:13-36
 60            android:hardwareAccelerated="true"
-60-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:13:13-47
+60-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:13:13-47
 61            android:launchMode="singleTop"
-61-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:10:13-43
+61-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:10:13-43
 62            android:theme="@style/LaunchTheme"
-62-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:11:13-47
+62-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:11:13-47
 63            android:windowSoftInputMode="adjustResize" >
-63-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:14:13-55
+63-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:14:13-55
 64
 65            <!--
 66                 Specifies an Android theme to apply to this Activity as soon as
@@ -140,21 +140,21 @@
 69                 to determine the Window background behind the Flutter UI.
 70            -->
 71            <meta-data
-71-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:19:13-22:17
+71-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:19:13-22:17
 72                android:name="io.flutter.embedding.android.NormalTheme"
-72-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:20:15-70
+72-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:20:15-70
 73                android:resource="@style/NormalTheme" />
-73-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:21:15-52
+73-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:21:15-52
 74
 75            <intent-filter>
-75-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:23:13-26:29
+75-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:23:13-26:29
 76                <action android:name="android.intent.action.MAIN" />
-76-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:24:17-68
-76-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:24:25-66
+76-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:24:17-68
+76-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:24:25-66
 77
 78                <category android:name="android.intent.category.LAUNCHER" />
-78-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:25:17-76
-78-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:25:27-74
+78-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:25:17-76
+78-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:25:27-74
 79            </intent-filter>
 80        </activity>
 81        <!--
@@ -162,44 +162,44 @@
 83             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 84        -->
 85        <meta-data
-85-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:31:9-33:33
+85-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:31:9-33:33
 86            android:name="flutterEmbedding"
-86-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:32:13-44
+86-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:32:13-44
 87            android:value="2" />
-87-->C:\Users\salma\Desktop\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:33:13-30
+87-->C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\android\app\src\main\AndroidManifest.xml:33:13-30
 88
 89        <service
-89-->[:cloud_firestore] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
+89-->[:cloud_firestore] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
 90            android:name="com.google.firebase.components.ComponentDiscoveryService"
-90-->[:cloud_firestore] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:10:18-89
+90-->[:cloud_firestore] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:10:18-89
 91            android:directBootAware="true"
 91-->[com.google.firebase:firebase-common:20.1.2] C:\Users\salma\.gradle\caches\transforms-3\51d5a07600719f8767e44db6f2a9636e\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:35:13-43
 92            android:exported="false" >
 92-->[com.google.firebase:firebase-messaging-ktx:23.0.8] C:\Users\salma\.gradle\caches\transforms-3\35687b86f12c9b49b017c2bf0bfcd72a\transformed\jetified-firebase-messaging-ktx-23.0.8\AndroidManifest.xml:28:13-37
 93            <meta-data
-93-->[:cloud_firestore] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+93-->[:cloud_firestore] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
 94                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-94-->[:cloud_firestore] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-134
+94-->[:cloud_firestore] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-134
 95                android:value="com.google.firebase.components.ComponentRegistrar" />
-95-->[:cloud_firestore] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+95-->[:cloud_firestore] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
 96            <meta-data
-96-->[:firebase_auth] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+96-->[:firebase_auth] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
 97                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-97-->[:firebase_auth] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
+97-->[:firebase_auth] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
 98                android:value="com.google.firebase.components.ComponentRegistrar" />
-98-->[:firebase_auth] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+98-->[:firebase_auth] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
 99            <meta-data
-99-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:38:13-40:85
+99-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:38:13-40:85
 100                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
-100-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:39:17-128
+100-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:39:17-128
 101                android:value="com.google.firebase.components.ComponentRegistrar" />
-101-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:40:17-82
+101-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:40:17-82
 102            <meta-data
-102-->[:firebase_core] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+102-->[:firebase_core] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
 103                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-103-->[:firebase_core] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
+103-->[:firebase_core] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
 104                android:value="com.google.firebase.components.ComponentRegistrar" />
-104-->[:firebase_core] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+104-->[:firebase_core] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
 105            <meta-data
 105-->[com.google.firebase:firebase-messaging-ktx:23.0.8] C:\Users\salma\.gradle\caches\transforms-3\35687b86f12c9b49b017c2bf0bfcd72a\transformed\jetified-firebase-messaging-ktx-23.0.8\AndroidManifest.xml:29:13-31:85
 106                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar"
@@ -250,187 +250,187 @@
 128-->[com.google.firebase:firebase-common-ktx:20.1.2] C:\Users\salma\.gradle\caches\transforms-3\1de15d67bee834d3dfd219d32710deaf\transformed\jetified-firebase-common-ktx-20.1.2\AndroidManifest.xml:17:17-82
 129        </service>
 130        <service
-130-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-19:72
+130-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-19:72
 131            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
-131-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-107
+131-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-107
 132            android:exported="false"
-132-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-37
+132-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-37
 133            android:permission="android.permission.BIND_JOB_SERVICE" />
-133-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-69
+133-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-69
 134        <service
-134-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:20:9-26:19
+134-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:20:9-26:19
 135            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
-135-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-97
+135-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-97
 136            android:exported="false" >
-136-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-37
+136-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-37
 137            <intent-filter>
-137-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-25:29
+137-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-25:29
 138                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-138-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:17-78
-138-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:25-75
+138-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:17-78
+138-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:25-75
 139            </intent-filter>
 140        </service>
 141
 142        <receiver
-142-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:28:9-35:20
+142-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:28:9-35:20
 143            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
-143-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-98
+143-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-98
 144            android:exported="true"
-144-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-36
+144-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-36
 145            android:permission="com.google.android.c2dm.permission.SEND" >
-145-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:31:13-73
+145-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:31:13-73
 146            <intent-filter>
-146-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:32:13-34:29
+146-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:32:13-34:29
 147                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-147-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:17-81
-147-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:25-78
+147-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:17-81
+147-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:25-78
 148            </intent-filter>
 149        </receiver>
 150
 151        <provider
-151-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:43:9-47:38
+151-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:43:9-47:38
 152            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
-152-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:44:13-102
+152-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:44:13-102
 153            android:authorities="com.example.endurance_fitness.flutterfirebasemessaginginitprovider"
-153-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:45:13-88
+153-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:45:13-88
 154            android:exported="false"
-154-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:46:13-37
+154-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:46:13-37
 155            android:initOrder="99" />
-155-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:47:13-35
+155-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:47:13-35
 156        <provider
-156-->[:flutter_email_sender] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\flutter_email_sender\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-18:20
+156-->[:flutter_email_sender] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\flutter_email_sender\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-18:20
 157            android:name="com.sidlatau.flutteremailsender.FlutterEmailSenderFileProvider"
-157-->[:flutter_email_sender] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\flutter_email_sender\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-90
+157-->[:flutter_email_sender] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\flutter_email_sender\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-90
 158            android:authorities="com.example.endurance_fitness.file_provider"
-158-->[:flutter_email_sender] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\flutter_email_sender\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-65
+158-->[:flutter_email_sender] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\flutter_email_sender\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-65
 159            android:exported="false"
-159-->[:flutter_email_sender] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\flutter_email_sender\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+159-->[:flutter_email_sender] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\flutter_email_sender\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
 160            android:grantUriPermissions="true" >
-160-->[:flutter_email_sender] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\flutter_email_sender\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-47
+160-->[:flutter_email_sender] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\flutter_email_sender\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-47
 161            <meta-data
-161-->[:flutter_email_sender] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\flutter_email_sender\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-17:61
+161-->[:flutter_email_sender] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\flutter_email_sender\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-17:61
 162                android:name="android.support.FILE_PROVIDER_PATHS"
-162-->[:flutter_email_sender] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\flutter_email_sender\intermediates\merged_manifest\release\AndroidManifest.xml:16:17-67
+162-->[:flutter_email_sender] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\flutter_email_sender\intermediates\merged_manifest\release\AndroidManifest.xml:16:17-67
 163                android:resource="@xml/shared_file_paths" />
-163-->[:flutter_email_sender] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\flutter_email_sender\intermediates\merged_manifest\release\AndroidManifest.xml:17:17-58
+163-->[:flutter_email_sender] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\flutter_email_sender\intermediates\merged_manifest\release\AndroidManifest.xml:17:17-58
 164        </provider>
 165
 166        <receiver
-166-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-17:39
+166-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-17:39
 167            android:name="me.carda.awesome_notifications.DartNotificationActionReceiver"
-167-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-89
+167-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-89
 168            android:exported="true" />
-168-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-36
+168-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-36
 169        <receiver
-169-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:18:9-20:39
+169-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:18:9-20:39
 170            android:name="me.carda.awesome_notifications.DartDismissedNotificationReceiver"
-170-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-92
+170-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-92
 171            android:exported="true" />
-171-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-36
+171-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-36
 172        <receiver
-172-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:21:9-23:39
+172-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:21:9-23:39
 173            android:name="me.carda.awesome_notifications.DartScheduledNotificationReceiver"
-173-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-92
+173-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-92
 174            android:exported="true" />
-174-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-36
+174-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-36
 175        <receiver
-175-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:24:9-38:20
+175-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:24:9-38:20
 176            android:name="me.carda.awesome_notifications.DartRefreshSchedulesReceiver"
-176-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:25:13-87
+176-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:25:13-87
 177            android:enabled="true"
-177-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:13-35
+177-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:13-35
 178            android:exported="true" >
-178-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:27:13-36
+178-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:27:13-36
 179            <intent-filter>
-179-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:28:13-37:29
+179-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:28:13-37:29
 180                <category android:name="android.intent.category.DEFAULT" />
-180-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:17-76
-180-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:27-73
+180-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:17-76
+180-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:27-73
 181
 182                <action android:name="android.intent.action.BOOT_COMPLETED" />
-182-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:31:17-79
-182-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:31:25-76
+182-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:31:17-79
+182-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:31:25-76
 183                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
-183-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:32:17-86
-183-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:32:25-83
+183-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:32:17-86
+183-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:32:25-83
 184                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-184-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:33:17-84
-184-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:33:25-81
+184-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:33:17-84
+184-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:33:25-81
 185                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-185-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:34:17-82
-185-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:34:25-79
+185-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:34:17-82
+185-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:34:25-79
 186                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
-186-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:35:17-82
-186-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:35:25-79
+186-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:35:17-82
+186-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:35:25-79
 187                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
-187-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:36:17-107
-187-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:36:25-104
+187-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:36:17-107
+187-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:36:25-104
 188            </intent-filter>
 189        </receiver>
 190
 191        <service
-191-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:40:9-43:72
+191-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:40:9-43:72
 192            android:name="me.carda.awesome_notifications.DartBackgroundService"
-192-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:41:13-80
+192-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:41:13-80
 193            android:exported="false"
-193-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:42:13-37
+193-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:42:13-37
 194            android:permission="android.permission.BIND_JOB_SERVICE" />
-194-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:43:13-69
+194-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:43:13-69
 195        <service
-195-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:44:9-49:43
+195-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:44:9-49:43
 196            android:name="me.carda.awesome_notifications.core.services.ForegroundService"
-196-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:45:13-90
+196-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:45:13-90
 197            android:enabled="true"
-197-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:46:13-35
+197-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:46:13-35
 198            android:exported="false"
-198-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:47:13-37
+198-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:47:13-37
 199            android:foregroundServiceType="phoneCall"
-199-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:48:13-54
+199-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:48:13-54
 200            android:stopWithTask="true" />
-200-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:49:13-40
+200-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:49:13-40
 201
 202        <activity
-202-->[:url_launcher_android] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-13:74
+202-->[:url_launcher_android] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-13:74
 203            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-203-->[:url_launcher_android] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
+203-->[:url_launcher_android] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
 204            android:exported="false"
-204-->[:url_launcher_android] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
+204-->[:url_launcher_android] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
 205            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-205-->[:url_launcher_android] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-71
+205-->[:url_launcher_android] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-71
 206
 207        <receiver
-207-->[:push_android] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\push_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-17:20
+207-->[:push_android] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\push_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-17:20
 208            android:name="uk.orth.push.FirebaseMessagingReceiver"
-208-->[:push_android] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\push_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-66
+208-->[:push_android] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\push_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-66
 209            android:exported="true"
-209-->[:push_android] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\push_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-36
+209-->[:push_android] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\push_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-36
 210            android:permission="com.google.android.c2dm.permission.SEND" >
-210-->[:push_android] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\push_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-73
+210-->[:push_android] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\push_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-73
 211            <intent-filter>
-211-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:32:13-34:29
+211-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:32:13-34:29
 212                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-212-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:17-81
-212-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:25-78
+212-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:17-81
+212-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:25-78
 213            </intent-filter>
 214        </receiver>
 215
 216        <service
-216-->[:push_android] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\push_android\intermediates\merged_manifest\release\AndroidManifest.xml:19:9-25:19
+216-->[:push_android] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\push_android\intermediates\merged_manifest\release\AndroidManifest.xml:19:9-25:19
 217            android:name="uk.orth.push.MessagingService"
-217-->[:push_android] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\push_android\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-57
+217-->[:push_android] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\push_android\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-57
 218            android:exported="false" >
-218-->[:push_android] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\push_android\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-37
+218-->[:push_android] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\push_android\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-37
 219            <intent-filter>
-219-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-25:29
+219-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-25:29
 220                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-220-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:17-78
-220-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:25-75
+220-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:17-78
+220-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:25-75
 221            </intent-filter>
 222        </service>
 223
 224        <activity android:name="com.maru.twitter_login.chrome_custom_tabs.ChromeCustomTabsActivity" />
-224-->[:twitter_login] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\twitter_login\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-103
-224-->[:twitter_login] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\twitter_login\intermediates\merged_manifest\release\AndroidManifest.xml:16:19-100
+224-->[:twitter_login] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\twitter_login\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-103
+224-->[:twitter_login] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\twitter_login\intermediates\merged_manifest\release\AndroidManifest.xml:16:19-100
 225        <activity
 225-->[com.facebook.android:facebook-common:14.1.0] C:\Users\salma\.gradle\caches\transforms-3\d0f6f91a5fd34ff396400024efb859d5\transformed\jetified-facebook-common-14.1.0\AndroidManifest.xml:30:9-33:66
 226            android:name="com.facebook.FacebookActivity"
@@ -455,8 +455,8 @@
 234-->[com.facebook.android:facebook-common:14.1.0] C:\Users\salma\.gradle\caches\transforms-3\d0f6f91a5fd34ff396400024efb859d5\transformed\jetified-facebook-common-14.1.0\AndroidManifest.xml:40:25-66
 235
 236                <category android:name="android.intent.category.DEFAULT" />
-236-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:17-76
-236-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:27-73
+236-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:17-76
+236-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:27-73
 237                <category android:name="android.intent.category.BROWSABLE" />
 237-->[com.facebook.android:facebook-common:14.1.0] C:\Users\salma\.gradle\caches\transforms-3\d0f6f91a5fd34ff396400024efb859d5\transformed\jetified-facebook-common-14.1.0\AndroidManifest.xml:43:17-78
 237-->[com.facebook.android:facebook-common:14.1.0] C:\Users\salma\.gradle\caches\transforms-3\d0f6f91a5fd34ff396400024efb859d5\transformed\jetified-facebook-common-14.1.0\AndroidManifest.xml:43:27-75
@@ -532,10 +532,10 @@
 278            android:permission="com.google.android.c2dm.permission.SEND" >
 278-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\salma\.gradle\caches\transforms-3\29957fddd8dd8fa6e101f3f5f25e3bd6\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:35:13-73
 279            <intent-filter>
-279-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:32:13-34:29
+279-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:32:13-34:29
 280                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-280-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:17-81
-280-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:25-78
+280-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:17-81
+280-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:25-78
 281            </intent-filter>
 282        </receiver>
 283        <!--
@@ -551,10 +551,10 @@
 290            android:exported="false" >
 290-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\salma\.gradle\caches\transforms-3\29957fddd8dd8fa6e101f3f5f25e3bd6\transformed\jetified-firebase-messaging-23.0.8\AndroidManifest.xml:48:13-37
 291            <intent-filter android:priority="-500" >
-291-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-25:29
+291-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-25:29
 292                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-292-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:17-78
-292-->[:firebase_messaging] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:25-75
+292-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:17-78
+292-->[:firebase_messaging] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:25-75
 293            </intent-filter>
 294        </service>
 295        <!--
@@ -621,8 +621,8 @@
 331-->[com.facebook.android:facebook-common:14.1.0] C:\Users\salma\.gradle\caches\transforms-3\d0f6f91a5fd34ff396400024efb859d5\transformed\jetified-facebook-common-14.1.0\AndroidManifest.xml:40:25-66
 332
 333                <category android:name="android.intent.category.DEFAULT" />
-333-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:17-76
-333-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:27-73
+333-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:17-76
+333-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:27-73
 334                <category android:name="android.intent.category.BROWSABLE" />
 334-->[com.facebook.android:facebook-common:14.1.0] C:\Users\salma\.gradle\caches\transforms-3\d0f6f91a5fd34ff396400024efb859d5\transformed\jetified-facebook-common-14.1.0\AndroidManifest.xml:43:17-78
 334-->[com.facebook.android:facebook-common:14.1.0] C:\Users\salma\.gradle\caches\transforms-3\d0f6f91a5fd34ff396400024efb859d5\transformed\jetified-facebook-common-14.1.0\AndroidManifest.xml:43:27-75
@@ -655,8 +655,8 @@
 349-->[com.facebook.android:facebook-common:14.1.0] C:\Users\salma\.gradle\caches\transforms-3\d0f6f91a5fd34ff396400024efb859d5\transformed\jetified-facebook-common-14.1.0\AndroidManifest.xml:40:25-66
 350
 351                <category android:name="android.intent.category.DEFAULT" />
-351-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:17-76
-351-->[:awesome_notifications] C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:27-73
+351-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:17-76
+351-->[:awesome_notifications] C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\awesome_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:27-73
 352                <category android:name="android.intent.category.BROWSABLE" />
 352-->[com.facebook.android:facebook-common:14.1.0] C:\Users\salma\.gradle\caches\transforms-3\d0f6f91a5fd34ff396400024efb859d5\transformed\jetified-facebook-common-14.1.0\AndroidManifest.xml:43:17-78
 352-->[com.facebook.android:facebook-common:14.1.0] C:\Users\salma\.gradle\caches\transforms-3\d0f6f91a5fd34ff396400024efb859d5\transformed\jetified-facebook-common-14.1.0\AndroidManifest.xml:43:27-75

@@ -1,3 +1,10 @@
+///
+///LatLng (Latitude/Longitude)
+///A class that allows for a feature of adding a map to the app
+///
+///Note: this is borrowed code
+///
+
 class LatLng {
   const LatLng(this.latitude, this.longitude);
   final double latitude;

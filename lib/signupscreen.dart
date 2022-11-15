@@ -1,39 +1,45 @@
+///
+///SignUp Screen
+///This class allows a user to sign up with their email address
+///They are also required to provide their name, a password, and to confirm their password
+///The user is create as type User
+///A functions checks if their password is strong enough and "valid"
+///Their password is also converted to a hashed string before adding to the database
+///
+
+//Imports
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
-
 import 'package:endurance_fitness/endurance_animations.dart';
 import 'package:endurance_fitness/endurance_theme.dart';
 import 'package:endurance_fitness/endurance_util.dart';
 import 'package:endurance_fitness/endurance_widgets.dart';
-
 import 'package:flutter/material.dart';
-//import 'package:google_fonts/google_fonts.dart';
-
 import 'package:endurance_fitness/main.dart';
 import 'package:endurance_fitness/homescreen.dart';
-
 import 'package:endurance_fitness/loginscreen.dart';
 import 'package:endurance_fitness/tasksscreen.dart';
-
 import 'package:crypto/crypto.dart';
 import 'package:crypt/crypt.dart';
 import 'dart:convert'; // for the utf8.encode method
-
 import 'package:endurance_fitness/globalvars.dart' as globalV;
+//End Imports
 
-
+//This class is for testing purposes (Email)
 class EmailFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Please fill in all fields' : '';
   }
 }
 
+//This class is for testing purposes (Name)
 class NameFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Please fill in all fields' : '';
   }
 }
 
+//This class is for testing purposes (Password)
 class PasswordFieldValidator {
   static String validate(String value) {
     if (value.length < 8) {
@@ -53,6 +59,7 @@ class PasswordFieldValidator {
   }
 }
 
+//This class is for testing purposes (Confirm Password)
 class ConfirmPasswordFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Passwords doesn\'t match' : '';
@@ -599,20 +606,13 @@ class _SignUpWidgetState extends State<SignUpWidget> {
   }
 }
 
+//Creating a new User if it is a valid action, then adding them to the database
 Future createUser(
     {required String id,
     required String email,
     required String name,
     required String password}) async {
   final docUser = FirebaseFirestore.instance.collection('appUsers').doc(email);
-
-  /*
-    final json = {
-      'name': name,
-      'age': 21,
-      'birthday': DateTime(2001, 7, 28),
-    };
-    */
 
   final user = User(
     id: id, //docUser.id,
@@ -626,6 +626,14 @@ Future createUser(
   await docUser.set(json);
 }
 
+//Check if the password is valid
+//Must not be empty
+//Must be at least 8 characters long
+//Must have an uppercase character
+//Must have an lowercase character
+//Must have a digit
+//Must have a special character
+//If any of the above are not true, an error message is displayed
 bool isValidPass(String pass, BuildContext context, [int minLength = 8]) {
   bool valid = false;
 
@@ -668,6 +676,8 @@ bool isValidPass(String pass, BuildContext context, [int minLength = 8]) {
   return valid;
 }
 
+//Takes in a password, converts it to a hashed string that is secure to store in the database
+//uses sha256 hashing algorithm
 String hashPass(String pass) {
   String hashedPass;
   hashedPass = pass;
@@ -676,9 +686,9 @@ String hashPass(String pass) {
       Crypt.sha256(pass, rounds: 10000, salt: 'abcdefghijklmnop').toString();
   //final h = Crypt(hashString);
 
-  const correctValue = 'p@ssw0rd';
-  const wrongValue = '123456';
-  """
+  //const correctValue = 'p@ssw0rd';
+  //const wrongValue = '123456';
+  /*
     if (!h.match(correctValue)) {
       print('Error: unexpected non-match: $correctValue');
     }
@@ -687,10 +697,13 @@ String hashPass(String pass) {
       print('Error: unexpected match: $wrongValue');
     }
     """;
+    */
 
   return hashedPass;
 }
 
+//A class of User
+//contains a userID, email, name, and (hashed) password
 class User {
   String id;
   final String email;

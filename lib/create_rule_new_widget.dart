@@ -1,26 +1,31 @@
-//import '../auth/auth_util.dart';
-//import '../backend/backend.dart';
+///
+///Rule: Create a new rule
+///This file contains a widget that acts like a pop-up for creating a new Rule
+///This Rule (if valid) will be added to the database
+///
+///Here lies an interface that allows one to add a rule (which contains a name and description)
 
+//Imports
 import 'package:endurance_fitness/endurance_theme.dart';
 import 'package:endurance_fitness/endurance_util.dart';
 import 'package:endurance_fitness/endurance_widgets.dart';
-
 import 'dart:ui';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:endurance_fitness/AppRuleClass.dart';
-
 import 'package:endurance_fitness/globalvars.dart' as globalV;
+//End Imports
 
+//A class for testing purposes
 class TaskNameFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Please fill in all fields' : '';
   }
 }
 
+//Another class for testing purposes
 class DetailsFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Please fill in all fields' : '';
@@ -37,7 +42,6 @@ class CreateRuleNewWidget extends StatefulWidget {
 class _CreateRuleNewWidgetState extends State<CreateRuleNewWidget> {
   TextEditingController? textController1;
   TextEditingController? textController2;
-
 
   @override
   void initState() {
@@ -284,10 +288,11 @@ class _CreateRuleNewWidgetState extends State<CreateRuleNewWidget> {
                                       .email_GLOBAL; //textController1!.text; //currentUserReference;]
 
                                   createAppRule(
-                                      id: "id",
-                                      ruleName: ruleName,
-                                      ruleDescription: ruleDescription,
-                                      ruleEmail: ruleEmail,);
+                                    id: "id",
+                                    ruleName: ruleName,
+                                    ruleDescription: ruleDescription,
+                                    ruleEmail: ruleEmail,
+                                  );
 
                                   Navigator.pop(context);
                                 },

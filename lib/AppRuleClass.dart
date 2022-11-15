@@ -1,8 +1,14 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
+///
+///AppRuleClass
+///------------
+///This is a class of "Rules", which are a user's fundamental laws for their life
+///------------
+///A rule has a name and description attached to it, and is stored on a database for Rules
+///It can be created, updated, deleted, and displayed as a list
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-//import 'package:flutter/widgets.dart';
 class MyWidget extends StatelessWidget {
   const MyWidget({
     super.key,
@@ -27,6 +33,7 @@ class MyWidget extends StatelessWidget {
   }
 }
 
+//The class of a Rule, that has a name, description, and the associated user's email
 class AppRule {
   String id;
   final String ruleName;
@@ -55,6 +62,7 @@ class AppRule {
       );
 }
 
+//A Rule is create, then stored in the database
 Future createAppRule(
     {required String id,
     required String ruleName,
@@ -74,16 +82,17 @@ Future createAppRule(
   await docUser.set(json);
 }
 
+//A Rule is updated
 Future updateAppRulePage(AppRule t) async {
   final docUser = FirebaseFirestore.instance.collection('appRules').doc(t.id);
 
   await docUser.update({
     'Description': t.ruleDescription,
     'Name': t.ruleName,
-    //'hello': FieldValue.delete(), //to delete the field for the record
   });
 }
 
+//A streamlist of Rules are displayed - this is a wrapper to potentially allow for many cases of displaying it
 Stream<List<AppRule>> readAppRules_wrapper(String _freq, String email) {
   //_freq = varToUse().freq;
   return readAppRules_noQuery(email);
@@ -97,6 +106,7 @@ Stream<List<AppRule>> readAppRules_wrapper(String _freq, String email) {
   */
 }
 
+//This allows for a list of Rules to be displayed
 Stream<List<AppRule>> readAppRules_noQuery(String email) =>
     FirebaseFirestore.instance
         .collection('appRules')
@@ -105,6 +115,7 @@ Stream<List<AppRule>> readAppRules_noQuery(String email) =>
         .map((snapshot) =>
             snapshot.docs.map((doc) => AppRule.fromJson(doc.data())).toList());
 
+//This allows for a list of Rules to be displayed by querying the frequency
 Stream<List<AppRule>> readAppRules(String freq, String email) =>
     FirebaseFirestore.instance
         .collection('appRules')
@@ -115,6 +126,7 @@ Stream<List<AppRule>> readAppRules(String freq, String email) =>
         .map((snapshot) =>
             snapshot.docs.map((doc) => AppRule.fromJson(doc.data())).toList());
 
+//This function collects a single Rule from the database and displays it
 Future<AppRule?> readAppRule(String sID) async {
   final docUser = FirebaseFirestore.instance.collection('appRules').doc(sID);
   final snapshot = await docUser.get();

@@ -1,18 +1,19 @@
+///
+///Homescreen
+///A class that Welcomes the user, and allows them to either Login or Signup
+///
+
+//Imports
 import 'package:endurance_fitness/endurance_animations.dart';
 import 'package:endurance_fitness/endurance_theme.dart';
-//import 'package:endurance_fitness/endurance_util.dart';
 import 'package:endurance_fitness/endurance_widgets.dart';
-
-//import '../login/login_widget.dart';
-//import '../sign_up/sign_up_widget.dart';
-
 import 'package:flutter/material.dart';
-//import 'package:google_fonts/google_fonts.dart';
-
 import 'package:endurance_fitness/main.dart';
 import 'package:endurance_fitness/loginscreen.dart';
 import 'package:endurance_fitness/signupscreen.dart';
+//End Imports
 
+//Greets the user
 class Welcome {
   String value = "Begin";
 
@@ -28,6 +29,7 @@ class HomeScreenWidget extends StatefulWidget {
   _HomeScreenWidgetState createState() => _HomeScreenWidgetState();
 }
 
+//Cool animation
 class _HomeScreenWidgetState extends State<HomeScreenWidget>
     with TickerProviderStateMixin {
   final animationsMap = {

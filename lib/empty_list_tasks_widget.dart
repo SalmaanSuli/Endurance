@@ -1,11 +1,16 @@
-import 'package:endurance_fitness/create_task_new_widget.dart';
+///
+///Tasks is Empty
+///This is the UI element that displays a picture for empty tasks
+///
 
+//Imports
+import 'package:endurance_fitness/create_task_new_widget.dart';
 import 'package:endurance_fitness/endurance_theme.dart';
 import 'package:endurance_fitness/endurance_util.dart';
 import 'package:endurance_fitness/endurance_widgets.dart';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+//End Imports
 
 class EmptyListTasksWidget extends StatefulWidget {
   const EmptyListTasksWidget({Key? key}) : super(key: key);

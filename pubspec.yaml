@@ -114,7 +114,7 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
 flutter_icons:
-  image_path: "assets/icon.jpg" 
+  image_path: "assets/icon_rbg.jpg" 
   android: true
   ios: true
   # optionally, as transparency is not allowed on app store

@@ -1,4 +1,4 @@
-# The proguard configuration file for the following section is C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\app\intermediates\default_proguard_files\global\proguard-android.txt-7.1.2
+# The proguard configuration file for the following section is C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\app\intermediates\default_proguard_files\global\proguard-android.txt-7.1.2
 # This is a configuration file for ProGuard.
 # http://proguard.sourceforge.net/index.html#manual/usage.html
 #
@@ -116,7 +116,7 @@
 # These classes are duplicated between android.jar and core-lambda-stubs.jar.
 -dontnote java.lang.invoke.**
 
-# End of content from C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\app\intermediates\default_proguard_files\global\proguard-android.txt-7.1.2
+# End of content from C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\app\intermediates\default_proguard_files\global\proguard-android.txt-7.1.2
 # The proguard configuration file for the following section is C:\src\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro
 # Build the ephemeral app in a module project.
 # Prevents: Warning: library class <plugin-package> depends on program class io.flutter.plugin.**
@@ -127,7 +127,7 @@
 -dontwarn android.**
 
 # End of content from C:\src\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro
-# The proguard configuration file for the following section is C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\app\intermediates\aapt_proguard_file\release\aapt_rules.txt
+# The proguard configuration file for the following section is C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\app\intermediates\aapt_proguard_file\release\aapt_rules.txt
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 -keep class androidx.startup.InitializationProvider { <init>(); }
 -keep class com.example.endurance_fitness.MainActivity { <init>(); }
@@ -215,7 +215,7 @@
 -keep class androidx.core.widget.NestedScrollView { <init>(android.content.Context, android.util.AttributeSet); }
 
 
-# End of content from C:\Users\salma\Desktop\e4app_new\endurance_fitness\build\app\intermediates\aapt_proguard_file\release\aapt_rules.txt
+# End of content from C:\Users\salma\Desktop\EnduranceFinal\e4app_new\endurance_fitness\build\app\intermediates\aapt_proguard_file\release\aapt_rules.txt
 # The proguard configuration file for the following section is C:\Users\salma\.gradle\caches\transforms-3\928be108c8ed1f88f5b92b08e590241b\transformed\jetified-androidcore-0.7.1\proguard.txt
 
 # End of content from C:\Users\salma\.gradle\caches\transforms-3\928be108c8ed1f88f5b92b08e590241b\transformed\jetified-androidcore-0.7.1\proguard.txt

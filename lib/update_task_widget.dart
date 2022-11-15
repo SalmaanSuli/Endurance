@@ -1,24 +1,29 @@
-//import '../auth/auth_util.dart';
-//import '../backend/backend.dart';
+///
+///Task (Update) Screen
+///This class contains the UI elements for updating a Task
+///It also allows updating a Task
+///
 
+//Imports
 import 'package:endurance_fitness/endurance_theme.dart';
 import 'package:endurance_fitness/endurance_util.dart';
 import 'package:endurance_fitness/endurance_widgets.dart';
-
 import 'dart:ui';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:endurance_fitness/AppTaskClass.dart';
+//End Imports
 
+//This is for testing purposes (Name)
 class TaskNameFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Please fill in all fields' : '';
   }
 }
 
+//This is for testing purposes (Details)
 class DetailsFieldValidator {
   static String validate(String value) {
     return value.isEmpty ? 'Please fill in all fields' : '';
@@ -32,6 +37,7 @@ class UpdateTaskNewWidget extends StatefulWidget {
   _UpdateTaskNewWidgetState createState() => _UpdateTaskNewWidgetState();
 }
 
+//UI
 class _UpdateTaskNewWidgetState extends State<UpdateTaskNewWidget> {
   DateTime datePicked = DateTime(2000, 1, 10);
   TextEditingController? textController1;

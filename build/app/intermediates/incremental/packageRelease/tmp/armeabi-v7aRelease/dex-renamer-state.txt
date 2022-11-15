@@ -1,4 +1,4 @@
-#Fri Oct 28 07:19:47 CAT 2022
-base.0=C\:\\Users\\salma\\Desktop\\e4app_new\\endurance_fitness\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+#Tue Nov 15 04:04:15 CAT 2022
+base.0=C\:\\Users\\salma\\Desktop\\EnduranceFinal\\e4app_new\\endurance_fitness\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
