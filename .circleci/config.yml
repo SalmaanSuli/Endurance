@@ -2,7 +2,7 @@ version: 2.1
 
 # Orb declarations --
 orbs:
-  codecov: codecov/codecov@1.0.2
+  codecov: codecov/codecov@3.0.0
   
 jobs:     
   build:
@@ -10,6 +10,8 @@ jobs:
       - image: cirrusci/flutter
     steps:
       - checkout
+      #- codecov/upload:
+          #token: b722080d-1dac-4599-9f09-1c51abda0182 
 
       - run: 
           command: sudo apt-get update
@@ -34,18 +36,18 @@ jobs:
       - run: 
           command: flutter test --coverage
           name: Run Test coverage
-          
-#      - name: Upload coverage reports to Codecov
- #         run: |
-  #        curl -Os https://uploader.codecov.io/latest/linux/codecov 
-   #       chmod +x codecov 
-    #      ./codecov
-     # - run:
-      #    command: apt install gpg-agent
-       #   name: Adding gpg agent
-          
       - store_test_results:
           path: test-results
 
       - codecov/upload:
-         file: coverage/lcov.info
+          #token: b722080d-1dac-4599-9f09-1c51abda0182 
+          file: coverage/lcov.info
+          
+
+workflows:
+  build:
+    jobs:
+      - build
+      
+      
+
