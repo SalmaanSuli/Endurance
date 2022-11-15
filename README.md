@@ -1,12 +1,12 @@
 # SDP-ShreddedGeeks
 ENDURANCE: Fitness App
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/SalmaanSuli/Endurance/tree/Smukello-patch-1.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/SalmaanSuli/Endurance/tree/Smukello-patch-1)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/SalmaanSuli/Endurance/tree/Smukello-patch-2.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/SalmaanSuli/Endurance/tree/Smukello-patch-2)
 
 
-![Coverage 84.2%](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cicirello/jacoco-badge-generator/main/tests/80.json) [![CircleCI](https://dl.circleci.com/status-badge/img/gh/SalmaanSuli/Endurance/tree/Smukello-patch-1.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/SalmaanSuli/Endurance/tree/Smukello-patch-1)
+![Coverage 84.2%](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cicirello/jacoco-badge-generator/main/tests/80.json) [![CircleCI](https://dl.circleci.com/status-badge/img/gh/SalmaanSuli/Endurance/tree/Smukello-patch-2.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/SalmaanSuli/Endurance/tree/Smukello-patch-2)
 
-[![CircleCI](https://dl.circleci.com/insights-snapshot/gh/SalmaanSuli/Endurance/Smukello-patch-1/workflow/badge.svg?window=24h)](https://app.circleci.com/insights/github/SalmaanSuli/Endurance/workflows/workflow/overview?branch=Smukello-patch-1&reporting-window=last-24-hours&insights-snapshot=true)
+[![CircleCI](https://dl.circleci.com/insights-snapshot/gh/SalmaanSuli/Endurance/Smukello-patch-2/workflow/badge.svg?window=24h)](https://app.circleci.com/insights/github/SalmaanSuli/Endurance/workflows/workflow/overview?branch=Smukello-patch-2&reporting-window=last-24-hours&insights-snapshot=true)
 
 **Setting up the environment**
 
