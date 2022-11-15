@@ -8,9 +8,9 @@ ENDURANCE: Fitness App
 
 [![CircleCI](https://dl.circleci.com/insights-snapshot/gh/SalmaanSuli/Endurance/Smukello-patch-2/workflow/badge.svg?window=24h)](https://app.circleci.com/insights/github/SalmaanSuli/Endurance/workflows/workflow/overview?branch=Smukello-patch-2&reporting-window=last-24-hours&insights-snapshot=true)
 
-[![codecov](https://codecov.io/gh/SalmaanSuli/Endurance/branch/main/graph/badge.svg?token=PXDM8HIGKO)](https://codecov.io/gh/SalmaanSuli/Endurance)
+[![codecov](https://codecov.io/gh/SalmaanSuli/Endurance/branch/Smukello-patch-1/graph/badge.svg?token=PXDM8HIGKO)](https://codecov.io/gh/SalmaanSuli/Endurance)
 
-https://codecov.io/gh/SalmaanSuli/Endurance/branch/main/graphs/tree.svg?token=PXDM8HIGKO
+https://codecov.io/gh/SalmaanSuli/Endurance/branch/Smukello-patch-1/graphs/tree.svg?token=PXDM8HIGKO
 
 **Setting up the environment**
 
