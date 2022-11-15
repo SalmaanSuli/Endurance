@@ -35,17 +35,9 @@ jobs:
           command: flutter test --coverage
           name: Run Test coverage
           
-#      - name: Upload coverage reports to Codecov
- #         run: |
-  #        curl -Os https://uploader.codecov.io/latest/linux/codecov 
-   #       chmod +x codecov 
-    #      ./codecov
-     # - run:
-      #    command: apt install gpg-agent
-       #   name: Adding gpg agent
-          
       - store_test_results:
           path: test-results
 
       - codecov/upload:
          file: coverage/lcov.info
+        
