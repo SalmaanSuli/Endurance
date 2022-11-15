@@ -5,6 +5,8 @@ ENDURANCE: Fitness App
 
 ![Coverage 84.2%](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cicirello/jacoco-badge-generator/main/tests/80.json) [![CircleCI](https://dl.circleci.com/status-badge/img/gh/SalmaanSuli/Endurance/tree/main.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/SalmaanSuli/Endurance/tree/main)
 
+[![codecov](https://codecov.io/gh/SalmaanSuli/Endurance/branch/main/graph/badge.svg?token=PXDM8HIGKO)](https://codecov.io/gh/SalmaanSuli/Endurance)
+
 
 **Setting up the environment**
 
