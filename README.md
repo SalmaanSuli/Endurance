@@ -1,18 +1,18 @@
 # SDP-ShreddedGeeks
 ENDURANCE: Fitness App
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/SalmaanSuli/Endurance/tree/Smukello-patch-2.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/SalmaanSuli/Endurance/tree/Smukello-patch-1)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/SalmaanSuli/Endurance/tree/Master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/SalmaanSuli/Endurance/tree/Master)
 
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/SalmaanSuli/Endurance/tree/Smukello-patch-2.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/SalmaanSuli/Endurance/tree/Smukello-patch-1)[![codecov](https://codecov.io/gh/SalmaanSuli/Endurance/branch/Smukello-patch-1/graph/badge.svg?token=PXDM8HIGKO)](https://codecov.io/gh/SalmaanSuli/Endurance)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/SalmaanSuli/Endurance/tree/Master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/SalmaanSuli/Endurance/tree/Master)   [![codecov](https://codecov.io/gh/SalmaanSuli/Endurance/branch/Master/graph/badge.svg?token=PXDM8HIGKO)](https://codecov.io/gh/SalmaanSuli/Endurance)
 
-[![CircleCI](https://dl.circleci.com/insights-snapshot/gh/SalmaanSuli/Endurance/Smukello-patch-1/workflow/badge.svg?window=24h)](https://app.circleci.com/insights/github/SalmaanSuli/Endurance/workflows/workflow/overview?branch=Smukello-patch-1&reporting-window=last-24-hours&insights-snapshot=true)
+[![CircleCI](https://dl.circleci.com/insights-snapshot/gh/SalmaanSuli/Endurance/Master/workflow/badge.svg?window=24h)](https://app.circleci.com/insights/github/SalmaanSuli/Endurance/workflows/workflow/overview?branch=Master&reporting-window=last-24-hours&insights-snapshot=true)
 
 
 
-![codecov](https://codecov.io/gh/SalmaanSuli/Endurance/branch/Smukello-patch-1/graphs/sunburst.svg?token=PXDM8HIGKO)
-![codecov](https://codecov.io/gh/SalmaanSuli/Endurance/branch/Smukello-patch-1/graphs/tree.svg?token=PXDM8HIGKO)
-![codecov](https://codecov.io/gh/SalmaanSuli/Endurance/branch/Smukello-patch-1/graphs/tree.svg?token=PXDM8HIGKO)
+![codecov](https://codecov.io/gh/SalmaanSuli/Endurance/branch/Master/graphs/sunburst.svg?token=PXDM8HIGKO)
+![codecov](https://codecov.io/gh/SalmaanSuli/Endurance/branch/Master/graphs/tree.svg?token=PXDM8HIGKO)
+![codecov](https://codecov.io/gh/SalmaanSuli/Endurance/branch/Master/graphs/icicle.svg?token=PXDM8HIGKO)
 
 **Setting up the environment**
 
