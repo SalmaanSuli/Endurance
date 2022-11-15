@@ -3,7 +3,7 @@ ENDURANCE: Fitness App
 
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/SalmaanSuli/Endurance/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/SalmaanSuli/Endurance/tree/main)
 
-![Coverage 84.2%](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cicirello/jacoco-badge-generator/main/tests/84.json) [![CircleCI](https://dl.circleci.com/status-badge/img/gh/SalmaanSuli/Endurance/tree/sprint3branch.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/SalmaanSuli/Endurance/tree/main)
+![Coverage 84.2%](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cicirello/jacoco-badge-generator/main/tests/80.json) [![CircleCI](https://dl.circleci.com/status-badge/img/gh/SalmaanSuli/Endurance/tree/main.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/SalmaanSuli/Endurance/tree/main)
 
 
 **Setting up the environment**
