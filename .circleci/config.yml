@@ -10,8 +10,8 @@ jobs:
       - image: cirrusci/flutter
     steps:
       - checkout
-      #- codecov/upload:
-          #token: b722080d-1dac-4599-9f09-1c51abda0182 
+      - codecov/upload:
+          token: CODECOV_TOKEN
 
       - run: 
           command: sudo apt-get update
