@@ -40,17 +40,17 @@ jobs:
           path: test-results
        
       - run:
-        name: Download and validate Codecov script
-        command: |
-          curl -fLso codecov https://codecov.io/bash;
-          VERSION=$(grep -o 'VERSION=\"[0-9\.]*\"' codecov | cut -d'"' -f2);
-          for i in 1 256 512
-          do
-            shasum -a $i -c --ignore-missing <(curl -s "https://raw.githubusercontent.com/codecov/codecov-bash/${VERSION}/SHA${i}SUM")
-          done
-  - run:
-      name: Upload coverage reports to Codecov
-      command: bash ./codecov
+          name: Download and validate Codecov script
+          command: |
+            curl -fLso codecov https://codecov.io/bash;
+            VERSION=$(grep -o 'VERSION=\"[0-9\.]*\"' codecov | cut -d'"' -f2);
+            for i in 1 256 512
+            do
+              shasum -a $i -c --ignore-missing <(curl -s "https://raw.githubusercontent.com/codecov/codecov-bash/${VERSION}/SHA${i}SUM")
+            done
+      - run:
+          name: Upload coverage reports to Codecov
+          command: bash ./codecov
 
       - checkout
       - codecov/upload:
