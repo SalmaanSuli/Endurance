@@ -43,7 +43,6 @@ class MyWorkoutsWidget extends StatefulWidget {
   _MyWorkoutsWidgetState createState() => _MyWorkoutsWidgetState();
 }
 
-
 class _MyWorkoutsWidgetState extends State<MyWorkoutsWidget>
     with TickerProviderStateMixin {
   final scaffoldKey = GlobalKey<ScaffoldState>();

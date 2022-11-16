@@ -2,6 +2,8 @@ import 'package:endurance_fitness/AppRuleClass.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 void main() {
   test('Simple test to test if the test in this file are ran', () {
     var result = 'I\'m just a simple test';
@@ -86,6 +88,33 @@ void main() {
     expect(result, 'Details can\'t be empty');
 //  });
     expect(res, 'Details can\'t be empty');
+  });
+
+  test('Creating a Rule', () {
+    AppRule a = AppRule(
+        ruleName: 'name',
+        ruleDescription: 'ruleDescription',
+        ruleEmail: 'sal6@gmail.com');
+
+    /*
+    createAppRule(
+        id: 'id',
+        ruleName: 'ruleName',
+        ruleDescription: 'ruleDescription',
+        ruleEmail: 'sal6@gmail.com');
+
+    updateAppRulePage(a);
+
+    Stream<List<AppRule>> S = readAppRules_wrapper('daily', 'sal6@gmail.com');
+    Stream<List<AppRule>> S2 = readAppRules('daily', 'sal6@gmail.com');
+
+    Future<AppRule?> F = readAppRule('9w94SwfvwxfvCB5XdsV0');
+    */
+
+    Map<String, dynamic> M = a.toJson();
+    //AppRule b = a.fromJson(M);
+
+    expect(a.ruleName, 'name');
   });
 
   testWidgets('finds a Text widget', (tester) async {

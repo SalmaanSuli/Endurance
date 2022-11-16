@@ -34,6 +34,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      //navigatorKey: NavigationService.materialKey,
       debugShowCheckedModeBanner: false,
       title: 'Endurance Home',
       home: WelcomeScreen(),
