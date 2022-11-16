@@ -83,33 +83,6 @@ Future createAppWorkout({
   await docUser.set(json);
 }
 
-//A workout can be updated by the user
-Future updateAppWorkoutPage(AppWorkout t) async {
-  final docUser = FirebaseFirestore.instance.collection('appWorkout').doc(t.id);
-
-  print(t.id);
-  //print("HELLLOOOO");
-
-  await docUser.update({
-    'Day': t.workoutDay,
-    'Exercise': t.workoutExercise,
-    'Sets': t.workoutSets,
-    'Reps': t.workoutReps,
-    'Description': t.workoutDescription,
-    'State': t.workoutState,
-    //'hello': FieldValue.delete(), //to delete the field for the record
-  });
-}
-
-//To display a list of workouts: this is a wrapper that determines whether to display ALL workouts, or only queried ones
-Stream<List<AppWorkout>> readAppWorkouts_wrapper(String _day, String email) {
-  if (_day == "") {
-    return readAppWorkouts_noQuery(email);
-  } else {
-    return readAppWorkouts(_day, email);
-  }
-}
-
 //To display a list of ALL workouts
 Stream<List<AppWorkout>> readAppWorkouts_noQuery(String email) =>
     FirebaseFirestore.instance
