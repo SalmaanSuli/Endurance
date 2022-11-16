@@ -11,10 +11,10 @@ import 'package:crypto/crypto.dart';
 import 'package:crypt/crypt.dart';
 
 import 'package:endurance_fitness/AppTaskClass.dart';
-//import 'package:endurance_fitness/main.dart';
+import 'package:endurance_fitness/main.dart';
 
 import 'package:endurance_fitness/appWorkouts.dart';
-//import 'package:endurance_fitness/workoutscreen.dart';
+import 'package:endurance_fitness/workoutscreen.dart';
 
 import 'package:endurance_fitness/slim_diet_rec.dart';
 
@@ -32,8 +32,83 @@ const MessagesCollection = 'appWorkout';
 
 class MockBuildContext extends Mock implements BuildContext {}
 
-void main() {
+//Check if the password is valid
+//Must not be empty
+//Must be at least 8 characters long
+//Must have an uppercase character
+//Must have an lowercase character
+//Must have a digit
+//Must have a special character
+//If any of the above are not true, an error message is displayed
+bool isValidPass(String pass, BuildContext context, [int minLength = 8]) {
+  bool valid = false;
+
+  bool notEmpty = !pass.isEmpty;
+  bool notShort = pass.length >= minLength;
+
+  bool hasUppercase = pass.contains(new RegExp(r'[A-Z]'));
+  bool hasDigits = pass.contains(new RegExp(r'[0-9]'));
+  bool hasLowercase = pass.contains(new RegExp(r'[a-z]'));
+  bool hasSpecial = pass.contains(new RegExp(r'[!@#$%^&*()-=,.<>:"{}?`~]'));
+
+  valid = notEmpty &&
+      notShort &&
+      hasUppercase &&
+      hasLowercase &&
+      hasDigits &&
+      hasSpecial;
+
+  String errorMsg =
+      "Password must be 8 characters, have an uppercase, lowercase, special, and digit.";
+  if (!valid) {
+    if (!notEmpty) {
+      errorMsg = "Password cannot be empty.";
+    } else if (!notShort) {
+      errorMsg = "Password must be at least 8 characters.";
+    } else if (!hasUppercase) {
+      errorMsg = "Password must have an Uppercase letter.";
+    } else if (!hasLowercase) {
+      errorMsg = "Password must have a lowercase letter.";
+    } else if (!hasDigits) {
+      errorMsg = "Password must contain a digit.";
+    } else if (!hasSpecial) {
+      errorMsg = "Password must contain a special character, like &,#,%.";
+    }
+
+    ScaffoldMessenger.of(context)
+        .showSnackBar(SnackBar(content: Text(errorMsg)));
+  }
+
+  return valid;
+}
+
+//Takes in a password, converts it to a hashed string that is secure to store in the database
+//uses sha256 hashing algorithm
+String hashPass(String pass) {
+  String hashedPass;
+  hashedPass = pass;
+
+  hashedPass =
+      Crypt.sha256(pass, rounds: 10000, salt: 'abcdefghijklmnop').toString();
+  //final h = Crypt(hashString);
+
+  //const correctValue = 'p@ssw0rd';
+  //const wrongValue = '123456';
   /*
+    if (!h.match(correctValue)) {
+      print('Error: unexpected non-match: $correctValue');
+    }
+
+    if (h.match(wrongValue)) {
+      print('Error: unexpected match: $wrongValue');
+    }
+    """;
+    */
+
+  return hashedPass;
+}
+
+void main() {
   MockBuildContext _mockContext;
   testWidgets('Main Run App', (WidgetTester tester) async {
     // Populate the fake database.
@@ -50,7 +125,6 @@ void main() {
     // // Verify the output.
     expect(find.text('Hello world!'), findsNothing);
   });
-  */
 
   //Workouts
   AppWorkout t = AppWorkout(
@@ -91,7 +165,7 @@ void main() {
       expect(c, Colors.green);
     });
   });
-/*
+
   group("Signing up:", () {
     test("is a valid password", () {
       _mockContext = MockBuildContext();
@@ -106,7 +180,6 @@ void main() {
       expect(hash, hashedPass);
     });
   });
-  */
 
   group("Diet and Workout Guides", () {
     test('Slim Diet', () {
@@ -248,6 +321,7 @@ Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Vitae aliquet nec
     });
   });
 
+/*
   group("Utils:", () {
     test("datetime format", () {
       String s = dateTimeFormat('yyyy-MM-dd – kk:mm', DateTime.now());
@@ -255,8 +329,8 @@ Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Vitae aliquet nec
       //showSnackbar(_mockContext, "hello");
       expect(s, DateFormat('yyyy-MM-dd – kk:mm').format(DateTime.now()));
     });
-
-    /*
+*/
+  /*
     test("Toggle Icon", () {
       final bool value;
 
@@ -276,7 +350,7 @@ Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Vitae aliquet nec
       ToggleIcon TI = ToggleIcon(true, onPressed, Icons.print, Icons.link);
     });
     */
-  });
+  //});
 
 /*
   group("Global Variables", () {
@@ -286,5 +360,4 @@ Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Vitae aliquet nec
     });
   });
 */
-
 }
