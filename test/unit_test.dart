@@ -11,10 +11,10 @@ import 'package:crypto/crypto.dart';
 import 'package:crypt/crypt.dart';
 
 import 'package:endurance_fitness/AppTaskClass.dart';
-import 'package:endurance_fitness/main.dart';
+//import 'package:endurance_fitness/main.dart';
 
 import 'package:endurance_fitness/appWorkouts.dart';
-import 'package:endurance_fitness/workoutscreen.dart';
+//import 'package:endurance_fitness/workoutscreen.dart';
 
 import 'package:endurance_fitness/slim_diet_rec.dart';
 
@@ -31,6 +31,20 @@ import 'package:endurance_fitness/women_workout.dart' as WW;
 const MessagesCollection = 'appWorkout';
 
 class MockBuildContext extends Mock implements BuildContext {}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      //navigatorKey: NavigationService.materialKey,
+      debugShowCheckedModeBanner: false,
+      title: 'Endurance Home',
+      home: MyApp(),
+    );
+  }
+}
 
 //Check if the password is valid
 //Must not be empty
@@ -116,8 +130,8 @@ void main() {
     await firestore.collection(MessagesCollection);
 
     // Render the widget.
-    await tester.pumpWidget(
-        MaterialApp(title: 'Endurance Home', home: WelcomeScreen()));
+    await tester
+        .pumpWidget(MaterialApp(title: 'Endurance Home', home: MyApp()));
     // Let the snapshots stream fire a snapshot.
     await tester.idle();
     // Re-render.
@@ -125,6 +139,18 @@ void main() {
     // // Verify the output.
     expect(find.text('Hello world!'), findsNothing);
   });
+
+  Color getColor(Set<MaterialState> states) {
+    const Set<MaterialState> interactiveStates = <MaterialState>{
+      MaterialState.pressed,
+      MaterialState.hovered,
+      MaterialState.focused,
+    };
+    if (states.any(interactiveStates.contains)) {
+      return Colors.lightGreen;
+    }
+    return Colors.green;
+  }
 
   //Workouts
   AppWorkout t = AppWorkout(
