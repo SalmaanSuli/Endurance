@@ -147,6 +147,7 @@ String hashPass(String pass) {
 
 void main() {
   MockBuildContext _mockContext;
+  /*
   testWidgets('Main Run App', (WidgetTester tester) async {
     // Populate the fake database.
     final firestore = FakeFirebaseFirestore();
@@ -162,6 +163,7 @@ void main() {
     // // Verify the output.
     expect(find.text('Hello world!'), findsNothing);
   });
+  */
 
   Color getColor(Set<MaterialState> states) {
     const Set<MaterialState> interactiveStates = <MaterialState>{
