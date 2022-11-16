@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:endurance_fitness/signupscreen.dart';
+//import 'package:endurance_fitness/signupscreen.dart';
 import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:endurance_fitness/globalvars.dart' as globalV;
+//import 'package:endurance_fitness/globalvars.dart' as globalV;
 import 'package:mockito/mockito.dart';
 
 import 'package:crypto/crypto.dart';
@@ -25,7 +25,7 @@ import 'package:endurance_fitness/meal.dart';
 import 'package:endurance_fitness/upper_body_workout.dart' as UBW;
 import 'package:endurance_fitness/women_workout.dart' as WW;
 
-import 'package:endurance_fitness/endurance_util.dart';
+//import 'package:endurance_fitness/endurance_util.dart';
 //import 'package:endurance_fitness/custom_toggle_icon.dart';
 
 const MessagesCollection = 'appWorkout';
