@@ -18,6 +18,14 @@ jobs:
       - run: 
           command: flutter doctor
           name: Checking the environment
+          
+      - run:
+          command: flutter pub get fake_cloud_firestore
+          name: Getting firestore for testing
+      
+      - run:
+          command: flutter pub get mockito
+          name: Getting mockito for testing
       
       - run: 
           command: flutter pub get
