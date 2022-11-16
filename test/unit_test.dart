@@ -11,10 +11,10 @@ import 'package:crypto/crypto.dart';
 import 'package:crypt/crypt.dart';
 
 import 'package:endurance_fitness/AppTaskClass.dart';
-import 'package:endurance_fitness/main.dart';
+//import 'package:endurance_fitness/main.dart';
 
 import 'package:endurance_fitness/appWorkouts.dart';
-import 'package:endurance_fitness/workoutscreen.dart';
+//import 'package:endurance_fitness/workoutscreen.dart';
 
 import 'package:endurance_fitness/slim_diet_rec.dart';
 
@@ -26,13 +26,14 @@ import 'package:endurance_fitness/upper_body_workout.dart' as UBW;
 import 'package:endurance_fitness/women_workout.dart' as WW;
 
 import 'package:endurance_fitness/endurance_util.dart';
-import 'package:endurance_fitness/custom_toggle_icon.dart';
+//import 'package:endurance_fitness/custom_toggle_icon.dart';
 
 const MessagesCollection = 'appWorkout';
 
 class MockBuildContext extends Mock implements BuildContext {}
 
 void main() {
+  /*
   MockBuildContext _mockContext;
   testWidgets('Main Run App', (WidgetTester tester) async {
     // Populate the fake database.
@@ -49,6 +50,7 @@ void main() {
     // // Verify the output.
     expect(find.text('Hello world!'), findsNothing);
   });
+  */
 
   //Workouts
   AppWorkout t = AppWorkout(
@@ -89,7 +91,7 @@ void main() {
       expect(c, Colors.green);
     });
   });
-
+/*
   group("Signing up:", () {
     test("is a valid password", () {
       _mockContext = MockBuildContext();
@@ -104,6 +106,7 @@ void main() {
       expect(hash, hashedPass);
     });
   });
+  */
 
   group("Diet and Workout Guides", () {
     test('Slim Diet', () {
