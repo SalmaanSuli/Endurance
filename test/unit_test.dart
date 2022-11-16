@@ -41,8 +41,31 @@ class MyApp extends StatelessWidget {
       //navigatorKey: NavigationService.materialKey,
       debugShowCheckedModeBanner: false,
       title: 'Endurance Home',
-      home: MyApp(),
+      home: WelcomeScreen(),
     );
+  }
+}
+
+class WelcomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        //key: scaffoldKey,
+        backgroundColor: Colors.green,
+        body: Container(
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height * 1,
+          decoration: BoxDecoration(
+            color: Colors.green,
+            image: DecorationImage(
+              fit: BoxFit.fill,
+              image: Image.asset(
+                'assets/welcomePage_2.jpg',
+              ).image,
+            ),
+          ),
+          child: Spacer(),
+        ));
   }
 }
 
